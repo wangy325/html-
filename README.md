@@ -1,5 +1,4 @@
---
-2017.10月学习html的一些笔记，学习不系统，笔记可能比较零散
+2017.10月学习html的一些笔记，学习不系统，可能比较零散
 
 ### 1 网页的基本结构
 ``` 
@@ -33,17 +32,15 @@
 
 ##### 分组标签:
 ```
-    <span style=" "> text </span>
+    <span style=" "> text </span> /*分组内容可以设置特殊格式（字体，字号，颜色，加粗等等）*/
 ```
-##### 粗体文本：    
+##### 粗体、斜体文本：    
 
     <strong> 粗体文本</strong>
-  
-##### 斜体文本：
-
+ 
     <em> 斜体文本</em>
  
-想玩点不一样的东西，可以试试`< ? style=" ">设置样式的（富）文本</>`，其中"?"代表标签内容
+想玩点不一样的东西，可以试试`< ? style=" ">设置样式的（富）文本</>`，其中"?"代表标签内容，这里面有很多属性值得研究
 
 #### 2.4 链接标签
 
@@ -70,20 +67,26 @@
 #### 3.1 列表（list）
 
 ##### 3.1.1 order-list
-		<ol type="A/a/I/i/1">
+		<ol type="A/a/I/i/1"> /*有序列表5大排序方式，数字默认*/
 			<li > content </li>
 			...
 			<li> content </li>
 		</ol>
 ##### 3.1.2 disorder-list
-		<ul type="disc">
+		<ul type="disc"> /*无序列表3种排序方式，默认实心圆圈*/
 			<li type="disc(default)/circle/square"> content </li>
 			...
 			<li> content </li>
-		</ul>
+		</ul> 
+		
+*在css样式中，可以设置列表的样式*
+
+		ul{
+		    list-style:none; /*取消列表前面的排序*/
+		}
 		
 ##### 3.1.3 define-list
-		<dl>
+		<dl> /*目前已知适用功能 可以控制悬挂缩进*/
 			<dt> content
 				<dd>
 					content
