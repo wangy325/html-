@@ -1,4 +1,4 @@
-2017.10月学习html的一些笔记，学习不系统，可能比较零散
+﻿2017.10月学习html的一些笔记，学习不系统，可能比较零散
 
 ### 1 网页的基本结构
 ``` 
@@ -206,7 +206,18 @@
 			</tr>
 		</table>
 
+#### 4 表单
+##### 4.1表单基本表现
+```
+	<form method="post/get" action=""> /* "action"表示向何处发送数据*/
+		<input type="" ...>
+		<select name="">  /*下拉列表框至少有一个option*/
+			<option value="" selected="selected">下拉选项（选中）</option>
+			...
+		</selected>
+	</form>
 
-
-
+```
+##### 4.2表单的type属性
+	![type attribute](C:\Users\Administrator\Desktop\html-note\3-表单\img\type_attribute.png)
 
