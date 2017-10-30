@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Lowest Salary Standard 2015</title>
+		<style type="text/css"> /* 表格全局设定，优先级高于表格正文的设定 , 对现网页内所有表格生效*/
+			table {
+					width: 800px; height: 300px; 
+					margin:0px auto; /* 顶端边距0px， 左右居中*/
+					border-spacing: 0px; /*单元格边距调为0px，将单元格边界重合（默认不重合）*/
+					border-collapse:collapse; /*接上个设定，将重合的单元格边界只显示一个（去掉线条颜色加深）*/ 
+					color: black;/*设定文本颜色，优先级低，table内可以重新定义颜色*/ 
+				}
+			 td {
+				border: 1px dashed blue; /*显示单元格边界，1px黑色虚线（实线为solid），只能在td下设置*/
+				text-align: center; /*设定文本对齐方式，优先级高于table 内设定*/
+				border-style:dotted; /*设定单元格边界样式，同第一个设定相同，优先级高*/
+				border-color: black; /*设定单元格边框颜色，同第一个设定相同，优先级高*/
+				
+				
+			}
+			
+			.a{
+				background-color:beige; /* 设定分组a的背景颜色*/
+				/*text-align: left; 设定分组的对齐方式*/	
+			}
+			
+			.b{
+				background-color: honeydew;
+				}
+		</style>
+		
+		
+		
+		
+	</head>
+	<body>
+		
+		<table>
+			<tr bgcolor="bisque" class="a">
+				<td colspan="4" align="center" width="650">Table 1：2015年各地最低工资标准</td>
+			</tr>
+	
+	
+			<tr bgcolor="antiquewhite" align="center" class="b">
+				<td  width="50">地区</td>
+				<td  width="250">月最低工资标准</td>
+				<td  width="250">小时最低工资标准</td>
+				<td  width="100">实施时间</td>
+			</tr>
+			
+			<tr align="center" bgcolor="bisque" class="a">
+				<td >深圳</td>
+				<td ><span style="color:blue;">2030</span></td>
+				<td >18.5</td>
+				<td >2015年3月1日</td>
+			</tr>
+			
+			<tr align="center" bgcolor="antiquewhite" class="b">
+				<td >shanghai</td>
+				<td >2130</td>
+				<td >19.2</td>
+				<td >2015.03</td>
+			</tr>
+			
+			<tr align="center" bgcolor="bisque" class="a">
+				<td >深圳</td>
+				<td ><span style="color:blue;">2030</span></td>
+				<td >18.5</td>
+				<td >2015年3月1日</td>
+			</tr>
+			
+			<tr bgcolor="antiquewhite" class="b">
+				<td colspan="2" align="center"><strong>...</strong></td>
+				<td colspan="2" align="center"><strong><span style=color:blue>...</span></strong></td>
+			</tr>
+			
+			<tr height="50" bgcolor="bisque"  class="a">
+				<td colspan="4" align="center"  ><span style=" color: red; font-size: x-large;;">Data quoted from China Daily</span></td>
+			</tr>
+			
+		</table>
+	</body>
+	<hr  />
+	
+</html>
+

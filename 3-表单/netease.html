@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<title>163邮箱</title>
+		<link rel="stylesheet" type="text/css" href="css/netease.css" />
+		<!--form 表单 -->
+	</head>
+	<body>
+		
+		<div class=head> 
+		<!--logo-->
+		
+			<div class=link > 
+				<p>
+				 <a href="#" ">免费邮</a>
+				 <a href="#">企业邮</a>
+				 <a href="#">VIP邮箱</a>
+				 <a href="#">帮助</a>
+			 	</p>
+			</div>
+			
+				<div class=logo>
+				<img src="img/netease/163logo.gif";"/>
+			</div>
+		</div>
+		
+		<div class="body"><!--body-->
+			<div class="login"><!--登录框-->
+				<div class=generalogin > <!--登录提示信息-->
+					<!--文本和图片居中对齐：vertical-align：middle，css中设置好像无效-->
+					<!--css中设置可以生效，在img样式中设置就好了-->
+						<img src="img/netease/loginIcon.gif" style="padding: 10px; vertical-align: middle;" />
+						<strong >普通登录</strong>
+				</div>
+				<div class=formlogin> <!--登录表单项-->
+					<form method="get" action="https://www.baidu.com" >
+						<p style="text-align: left; font-family:'times new roman';"> 	
+						<!--css里面设置了右对齐，这里再设置左对齐，优先级高-->
+							用户名&emsp;
+							<input name="username" type="text" value="" size="20" />
+						<!--value 初始值的字体怎么设置？-->
+							@163.com
+						</p>
+						
+						<p style="text-align: left; font-family:'times new roman';">
+							密&emsp;码&emsp;
+							<input name="passwd" type="password" value="" size="20" />
+						</p>
+						
+						<p style="text-align: left; ">
+							<!--下拉菜单栏 有bug, 不能添加mutilate属性，否则下拉列表不能展开-->
+							版&emsp;本&emsp;
+							<select name="version" size="1" <!--multiple="multiple"-->> 
+								<option value="默认" selected="selected">默认</option> 
+								<option value="html5.0" >HTML 5.0</option>
+								<option value="html5.0" >HTML 4.0</option>
+							</select>
+						</p>
+						
+						<p style="text-align: left; padding-left: 50px;"  >
+						<!--单选框-->
+							<input name="loginmethod" type="radio" value="auto login" checked="checked" /> 自动登录
+							<input name="loginmethod" type="radio" value="SSL"  /> SSL
+						</p>
+					<!--</form>-->
+				</div>	
+				<div class="button">
+					<!--<form method="get" action="https://www.baidu.com" >-->
+						<!--<p tyle="text-align: center;>-->
+							<input type="submit" name="loginButton" value="登录" />
+							&emsp;&emsp;
+							<input type="submit" name="loginButton" value="注册"/>
+						<!--post 和get 有啥区别？-->
+					
+					</form>
+					
+					<!--<form method="post" action="http://reg.email.163.com/unireg/call.do?cmd=register.entrance&from=163navi&regPage=163">
+						
+					</form>-->
+				</div>
+				
+			</div>
+			
+			<div class=into> <!--介绍页-->
+				<img src="img/netease/imap.jpg" style="padding:15px;" />
+				<ul>
+					<li>163/126/yeah三大免费邮箱均默认开放</li>
+					<li>全面支持iPhone/iPad及Android等系统</li>
+					<li>客户端、手机与网页，实现发送、阅读邮件立即同步普通登录手机号登录</li>
+				</ul>		
+			</div>
+		</div>
+		
+		<div class=tail> <!--底部信息栏-->
+			
+			<div class=about> <!--关于网易  -->
+				<p>
+					<a href="#">关于网易</a>
+					<a href="#">免费邮</a>
+					<a href="#">官方博客</a>
+					<a href="#">客户服务</a>
+					<a href="#">隐私政策</a>
+					| 网易公司版权所有 &copy;1997-2011
+				</p>
+					      
+			</div>
+			<div class="logo2"> <!--网易副logo-->
+				<img src="img/netease/netease_logo.gif"
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>免费申请QQ号</title>
+		<style type="text/css">
+			body {
+				width: 760px;
+				height: 840px;
+				margin:auto
+			}
+			
+			.logo{
+				width: 755px;
+				height:153px;
+				/*background-color: bisque;*/
+				
+			}
+			img{
+				vertical-align: middle;
+				text-align: right;
+			}
+			a{
+				text-decoration: none;
+				/*color: black;*/
+			}
+			p{
+				margin: auto;
+				
+			}
+			
+			.content{
+				/*width:755px;*/
+				height: 650px;
+				
+			}
+			.profile{
+				width:450px;
+				height:40px;
+				padding-left: 200px;
+				
+			}
+			.portrait{
+				padding-left: 250px;
+			}
+			.passwd-rule{
+				padding-left: 250px;
+				line-height: 30px;
+			}
+			.profile-long{
+				width:450px;
+				height: 40px;
+				padding-left: 185px;
+			}
+			.profile-length{
+				width:450px;
+				height: 70px;
+				padding-left: 170px;
+			}
+			textarea{
+				resize: none;
+			}
+			
+			.tail{
+				width: 755px;
+				height: 40px;
+				background-color:#F6FBFF ;
+				/*text-align:justify;*/
+			}
+			.right{
+				text-align: right;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<div class="logo">
+				<img src="img/QQ/logo.gif" />
+				<a style="padding-left: 390px;" href="">免费申请账号首页</a>|<a href="">反馈意见</a>
+				<img src="img/QQ/shenqing.gif" />
+				<p align="right">
+					<img src="img/QQ/step_01.gif" />
+					填写信息
+					<img src="img/QQ/step_02.gif"/>
+					申请成功
+				</p>
+				<hr style="width: 755px; height:10px; background-color:#F3FBFE; border: none;"/>
+			</div>
+			
+			<div class="content" >
+				<form action="" method="post">
+				<div class="profile">
+					<p>
+						昵称：<input type="text" value="" name="nickname" size="32"  />
+					</p>
+				</div>
+				<div class="profile">
+					<p>
+						头像：<img src="img/QQ/face.gif" />
+					</p>
+				</div>
+				<!--用户选择头像部分，不能完全实线-->
+				<div class="portrait">
+					<!--<input type="text" name="" value="" size="26" />-->
+					<input type="file" />
+				</div>
+				<div class="profile">
+					<p>
+						生日：
+						<select name="birth-year">
+							<option value="year" selected="selected">1990</option>
+							<option value="yaar" >1991</option>
+							<option value="year">1992</option>
+						</select>
+						年
+						<select name="birth-month">
+							<option value="month" selected="selected">12</option>
+							<option value="month" >11</option>
+							<option value="year">10</option>
+						</select>
+						月
+						<select name="birth-day">
+							<option value="day" selected="selected">31</option>
+							<option value="day" >1</option>
+							<option value="day">2</option>
+						</select>
+					</p>
+				</div>
+				<div class="profile">
+					<p>
+						性别：
+						<label for="male">男</label>
+							<input type="radio" name="gen" checked="checked" id="male" />
+						<label for"female">女</label>
+							<input type="radio" name="gen" id="female" />
+					</p>
+				</div>
+				<div class="profile">
+					<p>
+						密码：
+						<input type="password" name="passwd" value="" size="32" maxlength="50"/>
+					</p>
+				</div>
+				<div class="passwd-rule">
+					<p>6-16个字符组成，区分大小写，不能为9位以下纯数字</p>
+				</div>
+				<div class="profile">
+					<p>
+						密码：
+						<input type="password" name="passwd" value="" size="32" maxlength="50"/>
+					</p>
+				</div>
+				<div class="profile">
+					<p>
+						爱好：
+						<input type="checkbox" name="climbing" value="" />爬山
+						<input type="checkbox" name="swiming" />游泳
+						<input type="checkbox" name="surfing" />上网
+						<input type="checkbox" name="skiing" />滑雪
+					</p>
+				</div>
+				<div class="profile-long">
+					<p>
+						所在地：
+						<!--怎样实线下拉框的关联？这样式做出来没有意义-->
+						<select name="locale-nation">
+							<option value="nation" selected="selected">中国</option>	
+							<option value="nation">美国</option>
+							<option value="nation">日本</option>
+						</select>
+						
+						<select name="locale-distrit">
+							<option value="beijing" selected="selected">北京</option>
+							<option value="shenzhen">深圳</option>	
+							<option value="shanghai">上海</option>
+							<option value="Miami">迈阿密</option>
+							<option value="losangles">洛杉矶</option>
+							<option value="daban">大阪</option>
+							<option value="tokyo">东京</option>
+						</select>
+						
+						<select name="locale-street">
+							<option value="dongcheng" selected="selected">东城区</option>
+							<option value="xicheng">西城区</option>
+							<option value="tongcheng">通城区</option>
+						</select>
+					</p>
+				</div>
+				<div class="profile-long">
+					<p>
+						验证码：
+						<input type="text" name="ver-code" value="" size="32" maxlength="5" />
+					</p>
+				</div>
+				<div class="profile-length">
+					<p>
+						验证图片：
+						<img src="img/QQ/veryCode.gif" />
+						<a style="vertical-align: bottom;" href="">看不清楚？换张图片</a>
+					</p>
+				</div>
+				<div class="passwd-rule">
+					
+						
+						<input type="submit" name="agree" value="确定并同意以下服务条款" />
+						<input type="reset" name="rewrite" value="重置" />
+				
+					
+				</div>
+				<div class="passwd-rule">
+					<textarea cols="40" rows="5">腾讯在此特别提醒用户认真阅读、充分理解本《软件许可及服务协议》（下称《协议》）--- 用户应认真阅读、充分理解本《协议》中各条款，包括免除或者限制腾讯责任的免责条款及对用户的权利限制条款。请您审慎阅读并选择接受或不接受本《协议》（未成年人应在法定监护人陪同下阅读）。除非您接受本《协议》所有条款，否则您无权下载、安装或使用本软件及其相关服务。您的下载、安装、使用、帐号获取和登录等行为将视为对本《协议》的接受，并同意接受本《协议》各项条款的约束。
+				
+					</textarea>
+				</div>
+				</form>
+			</div>
+			<div class="tail">
+				<p>
+				<span class>
+					Copyright &copy;1998-2001 Tencent Inc. All Rights Reserved
+				</span>
+				<span style="padding-left: 190px;">腾讯公司 版权所有 </span>
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

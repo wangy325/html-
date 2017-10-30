@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>选择</title>
+	</head>
+	<body>
+		
+<script language="javascript">
+function changeProvince(){
+with(document.myForm){
+var countrys = new Array();
+countrys["0"] = ["--请选择所在省份和地区--"];
+countrys["中国"] = ["四川","陕西","福建","湖南","甘肃","西藏"];
+countrys["美国"] = ["华盛顿","密西西比","芝加哥","费城"];
+var value = country.value;
+province.options.length = 0;
+var option;
+for(i = 0;i < countrys[value].length;i++){
+option = new Option(countrys[value][i],countrys[value][i]);
+province.options.add(option);
+}
+if(country.value == "0")
+province.disabled = true;
+else
+province.disabled = false;
+}
+}
+</script>
+</head>
+<body>
+<form method="post" action="" name="myForm">
+<div>
+国家：<select name="country" onChange="changeProvince()">
+<option value="0">--请选择所属国家--</option>
+<option value="中国">中国</option>
+<option value="美国">美国</option>
+</select>
+</div>
+<div>省份/地区：<select name="province">
+<option>--请选择所在省份和地区--</option>
+</select>
+</div>
+</form>
+
+	</body>
+</html>

@@ -1,0 +1,71 @@
+body{
+	width: 900px;
+	margin: auto;
+	
+}
+
+.head{
+	width: 800;
+	height: 80px;
+	margin:10px;
+	/*background-color: lightgoldenrodyellow;*/
+}
+
+img{
+	vertical-align: middle;
+}
+
+.body{
+	width: 666px;
+	height: 666px;
+	margin: 10px;
+	/*background-color: mistyrose;*/
+}
+
+input::-moz-placeholder{
+	/*这段意思 设置firefox浏览器 文本框中的placehoder属性，并设置文本格式*/
+	/*color: red;*/ /*文本设置为红色*/ 
+	font-style: italic; /*斜体*/
+	font-family: "times new roman";/*新罗马字体*/
+}
+div.right{
+	width: 480px;
+	height: 356px;
+	margin-top:4px;
+	/*background-color: blueviolet;*/
+	float: right;
+}
+
+div.left{
+	width: 166px;
+	height: 356px;
+	padding: 5px;
+	float: left;
+	text-align: right;
+	/*background-color: lightblue;*/
+}
+
+div.left p{
+	line-height: 23px;
+}
+
+div.textera {
+	 width: 666px;
+	 height: 120px;
+	 float: right;
+	 
+}
+
+div.textera p{
+	padding-left: 75px;
+}
+div.certify{
+	width: 666px;
+	height: auto;
+	float: right;
+	
+}
+
+div.certify p{
+	padding-left: 90px;
+}

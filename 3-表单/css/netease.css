@@ -1,0 +1,105 @@
+
+	div{
+		margin: auto;
+	}
+p{
+	line-height: 25px;
+	/*background-color: yellow;*/
+	/*vertical-align: middle;*/
+	text-align: right;
+	
+}
+
+li{
+	/*list-style: none;*/
+	line-height: 25px;
+	
+}
+/* 头部*/
+.head{
+	width:800px;
+	height: 60px;
+	/*background-color: gray;*/
+	/*float: right;*/
+}
+
+.logo{
+	width: 400px;
+	height: 60px;
+	/*background-color: yellow;*/
+	float: right;
+	
+}
+
+.link{
+	width: 400px;
+	height: 60px;
+	float: right;
+	/*background-color: red;*/
+}
+
+
+.body{
+	width:800px;
+	height: 430px;
+	/*background-color: cornflowerblue;*/
+}
+
+/*登录框*/
+.login{
+	width: 380px;
+	height: 360px;
+	/*background-color: lightpink;*/
+	float: right;
+	margin-top: 20px;
+	border: 2px solid gray;
+}
+
+.generalogin{
+	width: 380px;
+	height: 60px;
+	margin-top:20px;
+	/*background-color: cadetblue;*/
+
+}
+.formlogin{
+	width:auto;
+	height: auto;
+	margin-left: 30px;
+}
+
+.button{
+	margin-left: 100px;
+}
+/*.logo1{
+	
+}
+
+.user{
+	float: right;
+	
+}*/
+
+/*图片+文字介绍页*/
+.into{
+	width: 400px;
+	height: 430px;
+	
+	/*background-color: deeppink;*/
+	float: right;
+	
+}
+/*尾部*/
+.tail{
+	width:800px;
+	height:60px;
+	background-color: gainsboro;
+	
+}
+
+.logo2{
+     padding-top: 5px;
+}
+.about{
+	float: right;
+}

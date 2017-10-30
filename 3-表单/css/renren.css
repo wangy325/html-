@@ -1,0 +1,79 @@
+body{
+	width: 800px;
+	margin: auto;
+}
+/*td{
+	border: 1px solid; 
+}*/
+
+.head{
+	width: 800px;
+	height: 50px;
+	/*margin: 10px;*/
+	
+	
+	/*background-color: aquamarine;*/
+	
+	
+}
+
+img{
+	vertical-align: middle;
+	padding:5px;
+	
+}
+
+.body{
+	width: 800px;
+	height: 600px;
+	
+	
+}
+
+.rec{
+	width: 280px;
+	height: 600px;
+	background-color: #F7F7F7;
+	border: 2px solid gray;
+	float: right;
+}
+
+.recommand-people{
+	width: 270px;
+	height: 100px;
+}
+.games{
+	width: 270px;
+	height: 100px;
+	padding-top: 70px;
+}
+.login{
+	width: 520px;
+	height: 600px;
+	/*background-color: cornflowerblue;*/
+	border: 2px solid gray;
+}
+
+.input{
+	width: 450px;
+	height: 230;
+}
+.input p{
+	margin-left: 70px;
+}
+
+.check p{
+	margin-left: 100px;
+}
+
+.code p{
+	margin-left: 83px;
+}
+
+.tail
+	{
+		width: 800px;
+		/*background-color: yellow;*/
+		line-height: 30px;
+		
+	}

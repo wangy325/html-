@@ -1,0 +1,34 @@
+
+.course-guide{
+	width: 220px;
+	height: 450px;
+	background-color: #F5F9FC;
+	border: 1px solid #BBC7D5;
+	
+}
+b{
+	margin-left: 30px;
+}
+
+p{
+	font-size: small;
+	line-height: 10px;
+	padding-left: 20px;
+	
+}
+
+.guide-01{
+	background: url(../img/course/title_icon.gif) no-repeat 5% 50% ;
+}
+
+.course-name{
+	width: 198px;
+	height: 28px;
+	background: url(../img/course/submenu.gif) no-repeat 90% 60% ;
+	margin: 10px;
+	/*padding: 10px;*/
+	
+	border-top: 1px solid #BBC7D5;
+	/*border-top-width: ;*/
+}
+/*boder 边框线条不代表实际元素的大小，外面还有外间距margin*/

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>语义化的调查问卷</title>
+		<style type="text/css">
+			
+			body{
+				width: 500px;
+				height: 500px;
+				margin: auto;
+			}
+			p{
+				line-height: 30px;
+			}
+			fieldset{
+				width: 400px;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="" method="post">
+			<fieldset id="">
+				<legend>用户信息表</legend>
+					<p>
+						<label for="name">姓名：</label>
+							<input type="text" name="urname" size="32" value="label tag" maxlength="50" id="name" /> <br />
+						年龄：<input type="text" name="age" value="" size="32" maxlength="3" /> <br/>
+						性别: &nbsp;<label for="male">男</label>
+								<input type="radio" name="gen"  checked="checked" id="male"/>
+							<label for="female">女</label>
+								<input type="radio" name="gen" id="female" /> <br />
+								<!--加入label标签的作用就是，点击“男”或者“女”的时候，单选框也能被选中-->
+						手机：<input type="text" name="urname" size="32" value="" maxlength="50" /> <br />
+						邮箱：<input type="text" name="urname" size="32" value="" maxlength="50" /> <br />
+						爱好：<label for="ski">滑雪</label>
+							<input type="checkbox" name="skiing" value="" id="ski" /> 
+							<label for="climbing">爬山</label>
+							<input type="checkbox" name="climbing" id="climbing" />
+							<label for="swiming">游泳</label>
+							<input type="checkbox" name="swiming" id="swiming" />
+							<label for="surfing">上网</label>
+							<input type="checkbox" name="surfing" id="surfing"  />
+							<label for"soccer">踢球</label>
+							<input type="checkbox" name="soccer" id="soccer" />
+					</p>
+				
+			</fieldset>
+			
+		</form>
+	</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+
+<!--
+	作者：offline
+	时间：2017-10-30
+	描述：本章内容包括：
+			1.input 的属性 （文本框，单选框，多选框，下拉框）
+			2.多行文本域
+			3.文件域
+			4.语义化 fieldset legend 和label
+			5.各标签的属性
+-->
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title> form</title>
+	</head>
+	<body>
+		<form>
+			<p>
+				<input name="songci" type="text" value="标题" size="20" />
+				<br />
+				<textarea name="content"  cols="50%" rows="10%" >
+				</textarea>
+			</p>
+			
+			<input type="radio" value="三个月" name="period" /> 3 months
+			<input type="radio" value="6 months" name="period"  /> 6 months
+			<input type="radio" value="12 months" name="period" checked="checked" /> 12 months
+			
+			<br />
+			
+			<input type="checkbox" value="apple" name=brand /> apple
+			<input type="checkbox" value="samsung" name="brand" /> samsung
+			<input type="checkbox" value="asus" name="brand"  /> asus
+			<input type="checkbox" value="dell" name="brands" /> dell
+			
+			
+			<br />
+			<br />
+			
+			 <p>
+        <input type="submit" name="button" value="提交">
+        <input type="reset" name="button2" value="重置">
+      </p>
+		</form>
+		<form method="post" action="https://www.mail.163.com" >
+		
+			<input type="image" src="img/netease/163logo.gif" />
+		</form>
+		
+		
+		<form action="" method="post" enctype="multipart/form-data">
+			<p>
+				<input type="file" name="files" border="solid" />
+				<input type="submit" name="upload" value="上传" />
+				<input type="reset" name="resetbutton" value="Reset"  />
+			</p>
+			
+			<input type="hidden" value="666" name="userid">
+			<input name="name" type="text" value="张三"  readonly="readonly">
+			<input type="submit "  disabled="disabled"  value="保存" >
+
+		</form>
+		
+		
+		<!--以下代码隐藏了文件域后面未显示任何文件的提示信息-->
+		<!--<style>
+				input[type="file"] {
+				  color: transparent;
+				}
+		</style>-->
+				<p>
+				<label id="realBtn" class="btn btn-info">
+		     			<input type="file" id="fileInput1" name="file" class="mFileInput" style="left:-9999px;position:absolute;">
+		     			<span>导入EXCEL数据</span>
+				</label>
+				</p>
+				<input type="file">
+		
+	</body>
+</html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>重置按钮</title>
+</head>
+<body>
+<table width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><form action="mailto:weixiaofoxw.com" name="form1" method="post" enctype="application/x-www-form-urlencoded"target="_blank" >
+      <p>用户名                          ：　　　
+        <input name="textfield" type="text" size="20" maxlength="15" />
+      </p>
+      <p>密码：
+  　 　　　
+        <input name="textfield2" type="password" value="abcdef"　size="25" maxlength="6" />
+      </p>
+      <p>性别 ：
+        <input name="radiobutton" type="radio" value="radiobutton" checked="checked" />男
+		<input type="radio" name="radiobutton" value="radiobutton" />女 
+      </p>
+      <p>
+        <input type="submit" name="button" value="提交">
+        <input type="reset" name="button2" value="重置">
+      </p>
+    </form></td>
+  </tr>
+</table>
+
+<form action="" method="post" >
+	<fieldset>
+    	<legend>用户信息</legend>
+        	姓名：<input type="text"/>
+        	性别：
+    </fieldset>
+</form>
+
+
+</body>
+</html>
