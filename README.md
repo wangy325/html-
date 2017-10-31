@@ -220,15 +220,25 @@
 ```
 #### 4.2 表单的type属性
 >text，指定为普通文本框 默认属性
+>
 >password 指定为密码框（隐藏输入内容）
+>
 >checkbox 指定为多选框
+>
 >radio 指定为单选框 /*单选框属于一个类别，其name属性必须相同*/
+>
 >submit 提交按钮 /*文本框和按钮在同一个form里面，按钮功能生效*/
+>
 >reset 重置按钮
->image 图片按钮
+>
+>image 图片按钮>
+
 >button 普通按钮 /*实现功能需要指定oneclick事件*/
+>
 >file 文件域，用于选择上传文件
+>
 >hidden 隐藏框 /*具体意义？*/
+>
 >...
 
 #### 4.3 文本域
@@ -250,7 +260,7 @@
  ```
 >贴士：利用fieldset制作带标题的边框的时候，可以设置margin-style来设置表单名的缩进
 
-#### 4.5 关于列表，表单，div css的综合应用，试试看看第三章练习的内容
+#### 4.5 关于列表，表单，div css的综合应用几点总结
 
 1.[网易邮箱登录页面](https://github.com/wangy325/html-note/blob/master/3-%E8%A1%A8%E5%8D%95/netease.html)
 是对div设计网页的一次大胆探索。
@@ -260,8 +270,20 @@
 2.[阿里巴巴注册页面](https://github.com/wangy325/html-note/blob/master/3-%E8%A1%A8%E5%8D%95/alibaba.html)
 是利用div和table设计网页的代表，这里利用table较为合理地规避了提示信息和表单的对齐问题。
 
-这里特别要补充的一点是：<span style="color:red">网页的页头部分，可以用一个div实现的</style>，需要做好的就是理解好盒子模型的
-内涵，本次设计中，利用了嵌套的div和表格的方式实现，略显繁琐。
-		
-		
+这里特别要补充的一点是：<span style="color:red">网页的页头部分，可以用一个div实现的</span>，需要做好的就是理解好
+[盒子模型](http://www.runoob.com/css/css-boxmodel.html)的内涵，本次设计中，利用了嵌套的div和表格的方式实现，略显繁琐。
+
+3.[人人注册页面](https://github.com/wangy325/html-note/blob/master/3-%E8%A1%A8%E5%8D%95/renren.html)
+已经是一个利用div实现网页设计很完美的例子了，前面说的网页head部分，也用一个div搞定了
+
+唯一不足之处在于，右边**热门主页**和**游戏**这两个板块，中间还是用了table实现。这里用table实现确实很容易理解，其实
+用div也是完全可以实现的，把照片和名字用一个div套起来，就可以了。此外还有一种用无序列表(ul)实现的方式，具体的代码可
+参见[图片+文本](https://github.com/wangy325/html-note/blob/master/3-%E8%A1%A8%E5%8D%95/%E5%A4%B4%E5%83%8F%2B%E6%96%87%E5%AD%97.html)
+
+4.{新浪资料修改](https://github.com/wangy325/html-note/blob/master/3-%E8%A1%A8%E5%8D%95/sina.html)
+这个网页虽然没用到table 但是div用的很乱。但是将文本和表单分开为两个div某种意义上
+提升了编辑效率。	
+
+5.[qq注册页面](https://github.com/wangy325/html-note/blob/master/3-%E8%A1%A8%E5%8D%95/acount-apply.html)
+是利用div和css设计网页最好的例子，虽然运用的东西并不多，但网页结构明朗。	
 
