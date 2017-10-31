@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>本页面实线图片和文字的上下对齐及横向对齐</title>
+		<style>
+			/*需要改变以下高度，盒子模型看起来更加易于理解*/
+			div.public-page{
+				width: 300px;
+				height: 150px;
+				
+			}
+			ul {
+				list-style: none;
+				margin: 0px;
+				padding: 0px 0px;
+			}
+			ul li{
+				width: 95px;
+				height: 110px;
+				float: left;
+				text-align: center;
+			}
+			span{
+				font-weight: bold;
+				line-height: 40px;
+				/*margin-bottom: 30px;*/
+				/*padding-bottom: 30px;*/
+			}
+			
+			.title{
+				width: 95px;
+				height: 110px;
+				float: left;
+				margin: 0px ;
+			}
+			.protrait-wapper  {
+				width: 73px;
+				height: 73px;
+				padding-left: 11px;
+				
+			}
+			.protrait-name p{
+				margin: auto;
+				text-align: center;
+			}
+			
+			table.recommand-page{
+				width: 300px;
+				text-align: center;
+			}
+			/*.kick{
+				column-span: 3;
+				text-align: left;
+				font-weight: bold;
+			}*/
+			/*td 放css样式好像不太行啊，colspan不了，其他俩属性没问题*/
+			
+		</style>
+	</head>
+	<body>
+	<!--利用list实现-->
+		<div class="public-page">
+			<div><span>最热门公共主页</span></div>	
+				<ul class="people">
+					<li>
+						<div><img src="img/renren/icon_likaifu.gif"/></div>
+						<div>李开复</div>
+					</li>
+					<li>
+						<div><img src="img/renren/icon_shangjie.gif"</div>
+						<div>商界</div>
+					</li>
+					<li>
+						<div><img src="img/renren/icon_zhaowei.gif"</div>
+						<div>赵薇</div>
+					</li>
+				</ul>
+		</div>
+		
+		<!--利用div实现-->
+		<div class="public-page">
+			<div><span>最热门公共主页</span></div>
+			<div class="title">
+				<div class="protrait-wapper">
+					<img src="img/renren/icon_zhaowei.gif" />
+				</div>
+				<div class="protrait-name"><p>赵薇</p></div>
+			</div>
+			
+			<div class="title">
+				<div class="protrait-wapper">
+					<img src="img/renren/icon_likaifu.gif" />
+				</div>
+				<div class="protrait-name"><p>李开复</p></div>
+			</div>
+			
+			<div class="title">
+				<div class="protrait-wapper">
+					<img src="img/renren/icon_shangjie.gif" />
+				</div>
+				<div class="protrait-name"><p>商界</p></div>
+			</div>
+		</div>
+		
+		<!--利用table实现-->
+		<table class="recommand-page">
+			<tr >
+					<td colspan="3" align="left" ><strong>最热门公共主页</strong></td>				
+			</tr>
+			<tr>
+				<td>
+					<table>
+						<tr>
+							<td>
+								<img src="img/renren/icon_likaifu.gif" />
+							</td>
+						</tr>
+						<tr>
+							<td>李开复</td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table>
+						<tr>
+							<td>
+								<img src="img/renren/icon_shangjie.gif"/>
+							</td>
+						</tr>
+						<tr>
+							<td>商界</td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table>
+						<tr>
+							<td>
+								<img src="img/renren/icon_zhaowei.gif" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								赵薇
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			
+		</table>
+	</body>
+</html>
