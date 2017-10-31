@@ -206,8 +206,8 @@
 			</tr>
 		</table>
 
-#### 4 表单
-##### 4.1表单基本表现
+### 4 表单
+#### 4.1表单基本表现
 ```
 	<form method="post/get" action=""> /* "action"表示向何处发送数据*/
 		<input type="" ...>
@@ -218,25 +218,25 @@
 	</form>
 
 ```
-##### 4.2 表单的type属性
+#### 4.2 表单的type属性
 >text，指定为普通文本框 默认属性
-password 指定为密码框（隐藏输入内容）
-checkbox 指定为多选框
-radio 指定为单选框 /*单选框属于一个类别，其name属性必须相同*/
-submit 提交按钮 /*文本框和按钮在同一个form里面，按钮功能生效*/
-reset 重置按钮
-image 图片按钮
-button 普通按钮 /*实现功能需要指定oneclick事件*/
-file 文件域，用于选择上传文件
-hidden 隐藏框 /*具体意义？*/
+>password 指定为密码框（隐藏输入内容）
+>checkbox 指定为多选框
+>radio 指定为单选框 /*单选框属于一个类别，其name属性必须相同*/
+>submit 提交按钮 /*文本框和按钮在同一个form里面，按钮功能生效*/
+>reset 重置按钮
+>image 图片按钮
+>button 普通按钮 /*实现功能需要指定oneclick事件*/
+>file 文件域，用于选择上传文件
+>hidden 隐藏框 /*具体意义？*/
 >...
 
-##### 4.3 文本域
+#### 4.3 文本域
 ```
 	<textarea  name="showText"  cols="x"  rows="y">文本内容 </textarea >
 	/*样式设置： style="resize:none;" 可固定文本域大小*/
 ```
-##### 4.4 fieldset 和label 标签
+#### 4.4 fieldset 和label 标签
 ```
 	<fieldset>
 		<legend>表单名</legengd> /*用于制作带标题的边框*/
@@ -250,15 +250,18 @@ hidden 隐藏框 /*具体意义？*/
  ```
 >贴士：利用fieldset制作带标题的边框的时候，可以设置margin-style来设置表单名的缩进
 
-##### 4.5 关于列表，表单，div css的综合应用，试试看看第三章练习的内容
+#### 4.5 关于列表，表单，div css的综合应用，试试看看第三章练习的内容
 
 1.[网易邮箱登录页面](https://github.com/wangy325/html-note/blob/master/3-%E8%A1%A8%E5%8D%95/netease.html)
 是对div设计网页的一次大胆探索。
 		
-网页设计的过程中对css样式的引用杂乱不堪，既有行内引用，也有基于`.css`样式的外部引用。刚开始，对css还不是很熟练。
+网页设计的过程中对css样式的引用**杂乱不堪**，既有行内引用，也有基于`.css`样式的外部引用。刚开始，对css还不是很熟练。
 		
 2.[阿里巴巴注册页面](https://github.com/wangy325/html-note/blob/master/3-%E8%A1%A8%E5%8D%95/alibaba.html)
 是利用div和table设计网页的代表，这里利用table较为合理地规避了提示信息和表单的对齐问题。
+
+这里特别要补充的一点是：<span style="color:red">网页的页头部分，可以用一个div实现的</style>，需要做好的就是理解好盒子模型的
+内涵，本次设计中，利用了嵌套的div和表格的方式实现，略显繁琐。
 		
 		
 
