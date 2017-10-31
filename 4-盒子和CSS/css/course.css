@@ -12,20 +12,22 @@ b{
 
 p{
 	font-size: small;
-	line-height: 10px;
+	line-height: 28px;
 	padding-left: 20px;
-	
+	margin: 0px auto;
+	/* line-height 设置中的文本框设置和背景图片一样的宽高，保证图像标记居中显示*/
 }
 
 .guide-01{
 	background: url(../img/course/title_icon.gif) no-repeat 5% 50% ;
+	height: 26px;
 }
 
 .course-name{
 	width: 198px;
 	height: 28px;
-	background: url(../img/course/submenu.gif) no-repeat 90% 60% ;
-	margin: 10px;
+	background: url(../img/course/submenu.gif) no-repeat 90% 50% ;
+	/*margin: 10px;*/
 	/*padding: 10px;*/
 	
 	border-top: 1px solid #BBC7D5;

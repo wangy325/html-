@@ -1,0 +1,54 @@
+/*div{
+	margin: auto;
+}*/
+dd{
+	margin: 0px 0px;
+	padding: 0px 0px;
+}
+.all-categories{
+	width: 300px;
+	height:980px ;
+	border: 10px solid lightgray;
+}
+.title{
+	height: 30px;
+	background-color: black;
+}
+
+.title b{
+	color: white;
+	font-size: 20px;
+	font-family: "微软雅黑";
+}
+
+.sub-catrgories{
+	/*width: 270px;*/
+	height: 30px;
+	/*background: url(../img/goods-category/icon_01.gif) no-repeat 6% 0%;*/
+	/*这里没按照要求用bg图片，背景图片还要多分很多类别，有点繁琐*/
+	margin: auto;
+}
+img{
+	vertical-align: center;
+	padding-left: 10px;
+	float: left;
+}
+.sub-catrgories p{
+	line-height:30px ;
+	padding-left: 40px;
+	margin: 0px;
+	font-size: 16px;
+	font-weight: bold;
+	
+}
+.details{
+	/*width: 270px;*/
+	margin: auto;
+	border-bottom: 1px dashed gray;
+}
+.details p{
+	padding-left: 40px;
+	line-height: 28px;
+	font-size: 14px;
+	margin: 0px;
+}
