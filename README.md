@@ -231,8 +231,8 @@
 >
 >reset 重置按钮
 >
->image 图片按钮>
-
+>image 图片按钮
+>
 >button 普通按钮 /*实现功能需要指定oneclick事件*/
 >
 >file 文件域，用于选择上传文件
@@ -280,7 +280,7 @@
 用div也是完全可以实现的，把照片和名字用一个div套起来，就可以了。此外还有一种用无序列表(ul)实现的方式，具体的代码可
 参见[图片+文本](https://github.com/wangy325/html-note/blob/master/3-%E8%A1%A8%E5%8D%95/%E5%A4%B4%E5%83%8F%2B%E6%96%87%E5%AD%97.html)
 
-4.{新浪资料修改](https://github.com/wangy325/html-note/blob/master/3-%E8%A1%A8%E5%8D%95/sina.html)
+4.[新浪资料修改](https://github.com/wangy325/html-note/blob/master/3-%E8%A1%A8%E5%8D%95/sina.html)
 这个网页虽然没用到table 但是div用的很乱。但是将文本和表单分开为两个div某种意义上
 提升了编辑效率。	
 
