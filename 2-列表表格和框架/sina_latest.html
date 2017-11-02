@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>微博首页</title>
+		<!--最新版，熟悉盒子模型之后重写版-->
+		<style type="text/css">
+			/*body{
+				/*width: 990px;
+				
+				margin:0px auto;
+				background: #F5F5DC url(http://mat1.gtimg.com/www/mb/images/login/theme/yuanhua2.jpg) center top no-repeat;
+				background-size: cover; 
+				设置背景图片完全覆盖页面，不随网页缩放变动
+				！网页比例变化的时候，背景图片并没有完全覆盖。尝试添加背景图片失败.*/
+			div{
+				margin:auto;
+			}
+			ul{
+				margin:0px;
+				padding: 0px ; 
+				list-style: none;
+			}
+			li{
+				
+			}
+			.content{
+				width: 990px;
+				height: 805px;
+				clear: left;
+				
+			}
+			.logo{
+				width: 990px;
+				height: 80px;
+				/*position: relative;*/
+			}
+			.banner-recommend-content{
+				width: 710px;
+				height: auto;
+				float: left;
+				}
+			.banner{
+				background-color: #48A902;
+			}
+			img{
+				vertical-align: middle;
+				
+			}
+			span.topics{
+				line-height: 30px;
+			}
+			
+			.recommend-users{
+				width: 280px;
+				height: 280px;
+				float: left;
+			}
+			.into-people{
+				margin-top: 10px;
+			}
+			hr{
+				margin: 10px 0px 0px 0px;
+				padding: 0px;
+				color:gray;
+			}
+			.user-wrapper{
+				width: 48px;
+				height: 70px;
+				float: left;
+				margin:10px 0px 0px 30px;
+			}
+			.user-portrait{
+				width: 48px;
+				height: 48px;
+				float: left;
+				
+			}
+			.user-name p{
+				float: left;
+				text-align: center;
+				height: 22px;
+				width: 48px;
+				margin:0px;
+				
+				
+			}
+			
+			.popular-weibo{
+				width: 430px;
+				height:500px;
+				float: right;
+			}
+			.folk-talk{
+				margin-top:10px;
+			}
+			.weibo-content{
+				width: 420px;
+				height: 556px;
+				
+			}
+			.content-wrapper{
+				height: 67px;
+				width: 420px;
+				margin-top:10px ;
+				
+			}
+			.content-wrapper .user-portrait{
+				padding:10px 0px 0px 5px;
+			}
+			.content-details{
+				width:320px;
+				margin-right: 30px;
+				
+			}
+			.interesting-people{
+				width: 280px;
+				height: 280px;
+				float: left;
+			}
+			.into-people-plus{
+				margin-top: 10px;
+			}
+			.login-hotlist-howto{
+				width: 280px;
+				height: auto;
+				float: right;
+				}
+			.login-hotlist-howto .top10{
+				
+				margin: 15px 48px 10px ;
+			}
+			.hotlist{
+				width:280px;
+				height: 240px;
+				
+			}
+			.rank{
+				width:280px;
+				height: 24px;
+				clear:left
+			}
+			.rank-number-img{
+				width:20px;
+				
+				margin-left: 40px;
+				
+				float: left;
+			}
+			.rank-number-img img{
+				padding-left: 3px;
+			}
+			.star-name{
+				width: 50px;
+				float: left;
+				margin-left: 10px;
+				/*margin-right: 0px;*/
+			}
+			.popularity-index{
+				width:100px;
+				float: left;
+				margin-left:30px ;
+				
+			}
+			.howto{
+				width: 280px;
+				clear: left;
+				margin-top: 30px;
+			}
+			.howto img{
+				height: 21px;
+				margin-left: 42px;
+				float: left;
+				
+			}
+			.howto-part1{
+				padding-left: 10px;
+			}
+			p.howto-part2{
+				padding-left: 70px;
+				margin: auto;
+			}
+			.copyright{
+				width:990px;
+				height: 80px;
+				background-color:#D6F3F7 ;
+			}
+			.report{
+				margin: 16px 40px;
+				float: right;
+				
+			}
+			.notice{
+				float: right;	
+			}
+			.guide{
+				width: 500px;
+				height:21px;
+				float: left;
+			}
+			.guide p{
+				margin: 0px auto;
+				padding: 16px 10px 0px ;
+			
+			}
+		</style>
+	</head>
+	<body>
+		
+			<div class="logo">
+				<img src="img/logo.png"/>
+			</div>
+			<div class="content">
+				<div class="banner-recommend-content">
+					<div class="banner">
+						<img src="img/banner.jpg" />
+						<img src="img/icon_hot.gif" style="width: 21px;height: 21px;"/>
+						<span class="topics">
+							正在热议：&nbsp;
+							<a href="">全国两会</a>
+							<a href="">欧冠</a>
+							<a href="">两会微愿景</a>
+							<a href="">代表委员微博</a>
+							<a href="">春暖花开</a>
+							<a href="">旭日阳刚</a>
+							<a href="">小沈阳</a>
+							<a href="">西单女孩</a>
+						</span>
+					</div> <!--banner end-->
+					<div class="recommend-users">
+						<div class="into-people">
+							<img src="img/icon_elite.gif"/>
+							<span>这些人正在使用微博</span>
+						</div>
+						<hr width="240px"  />
+						<div class="user-wrapper">
+							<div class="user-portrait">
+								<img src="img/noavatar.gif"/>
+							</div>
+							<div class="user-name">
+								<p>张三</p>
+							</div>
+						</div>	
+						<div class="user-wrapper">
+							<div class="user-portrait">
+								<img src="img/noavatar.gif"/>
+							</div>
+							<div class="user-name">
+								<p>张三</p>
+							</div>
+						</div>
+						<div class="user-wrapper">
+							<div class="user-portrait">
+								<img src="img/noavatar.gif"/>
+							</div>
+							<div class="user-name">
+								<p>张三</p>
+							</div>
+						</div>
+						<div class="user-wrapper">
+							<div class="user-portrait">
+								<img src="img/noavatar.gif"/>
+							</div>
+							<div class="user-name">
+								<p>张三</p>
+							</div>
+						</div>
+						<div class="user-wrapper">
+							<div class="user-portrait">
+								<img src="img/noavatar.gif"/>
+							</div>
+							<div class="user-name">
+								<p>张三</p>
+							</div>
+						</div>
+						<div class="user-wrapper">
+							<div class="user-portrait">
+								<img src="img/noavatar.gif"/>
+							</div>
+							<div class="user-name">
+								<p>张三</p>
+							</div>
+						</div>
+						<div class="user-wrapper">
+							<div class="user-portrait">
+								<img src="img/noavatar.gif"/>
+							</div>
+							<div class="user-name">
+								<p>张三</p>
+							</div>
+						</div>
+						<div class="user-wrapper">
+							<div class="user-portrait">
+								<img src="img/noavatar.gif"/>
+							</div>
+							<div class="user-name">
+								<p>张三</p>
+							</div>
+						</div>
+						<div class="user-wrapper">
+							<div class="user-portrait">
+								<img src="img/noavatar.gif"/>
+							</div>
+							<div class="user-name">
+								<p>张三</p>
+							</div>
+						</div>
+					</div><!--这些人正在用微博end-->
+					
+					<div class="popular-weibo">
+						<div class="folk-talk">
+							<img src="img/icon_elite.gif" />
+							<span>大家正在说</span>
+							<hr width="400px" />
+						</div>
+						<div class="weibo-content">
+							<div class="content-wrapper">
+								<div class="user-portrait">
+									<img src="img/noavatar.gif" />
+								</div>
+								<div class="content-details">
+									<span><a href="#">赵六</a>：2012年的第一场雪,比以往时候来的更晚一些，飘落在风中的雪花，就像你</span><br />
+									<span>2分钟前</span>
+								</div>
+							</div>
+							<div class="content-wrapper">
+								<div class="user-portrait">
+									<img src="img/noavatar.gif" />
+								</div>
+								<div class="content-details">
+									<span><a href="#">赵六</a>：2012年的第一场雪,比以往时候来的更晚一些</span><br />
+									<span>2分钟前</span>
+								</div>
+							</div>
+							<div class="content-wrapper">
+								<div class="user-portrait">
+									<img src="img/noavatar.gif" />
+								</div>
+								<div class="content-details">
+									<span><a href="#">赵六</a>：2012年的第一场雪,比以往</span><br />
+									<span>2分钟前</span>
+								</div>
+							</div>
+							<div class="content-wrapper">
+								<div class="user-portrait">
+									<img src="img/noavatar.gif" />
+								</div>
+								<div class="content-details">
+									<span><a href="#">赵六</a>：2012年的第一场雪,比以往时候来的更晚一些，飘落在风中的雪花，就像你</span><br />
+									<span>2分钟前</span>
+								</div>
+							</div>
+							<div class="content-wrapper">
+								<div class="user-portrait">
+									<img src="img/noavatar.gif" />
+								</div>
+								<div class="content-details">
+									<span><a href="#">赵六</a>：2012年的第一场雪,比以往时候来的你</span><br />
+									<span>2分钟前</span>
+								</div>
+							</div>
+							<div class="content-wrapper">
+								<div class="user-portrait">
+									<img src="img/noavatar.gif" />
+								</div>
+								<div class="content-details">
+									<span><a href="#">赵六</a>：2012年的第一场雪,比以往</span><br />
+									<span>2分钟前</span>
+								</div>
+							</div>
+							<div class="content-wrapper">
+								<div class="user-portrait">
+									<img src="img/noavatar.gif" />
+								</div>
+								<div class="content-details">
+									<span><a href="#">赵六</a>：2012年的第一场雪,比以往时候来的更晚一些，飘落在风中的雪花，就像你</span><br />
+									<span>2分钟前</span>
+								</div>
+							</div>
+						</div>
+					</div><!--热门微博end-->
+					
+					<div class="interesting-people">
+						<div class="into-people-plus">
+							<img src="img/icon_elite.gif" />
+							<span>有趣的人</span>
+						</div>
+						<hr width="240px"/>
+						<div class="user-wrapper">
+							<div class="user-portrait">
+								<img src="img/noavatar.gif"/>
+							</div>
+							<div class="user-name">
+								<p>张三</p>
+							</div>
+						</div>
+						<div class="user-wrapper">
+							<div class="user-portrait">
+								<img src="img/noavatar.gif"/>
+							</div>
+							<div class="user-name">
+								<p>张三</p>
+							</div>
+						</div>
+						<div class="user-wrapper">
+							<div class="user-portrait">
+								<img src="img/noavatar.gif"/>
+							</div>
+							<div class="user-name">
+								<p>张三</p>
+							</div>
+						</div>
+						<div class="user-wrapper">
+							<div class="user-portrait">
+								<img src="img/noavatar.gif"/>
+							</div>
+							<div class="user-name">
+								<p>张三</p>
+							</div>
+						</div>
+						<div class="user-wrapper">
+							<div class="user-portrait">
+								<img src="img/noavatar.gif"/>
+							</div>
+							<div class="user-name">
+								<p>张三</p>
+							</div>
+						</div>
+						<div class="user-wrapper">
+							<div class="user-portrait">
+								<img src="img/noavatar.gif"/>
+							</div>
+							<div class="user-name">
+								<p>张三</p>
+							</div>
+						</div>
+						<div class="user-wrapper">
+							<div class="user-portrait">
+								<img src="img/noavatar.gif"/>
+							</div>
+							<div class="user-name">
+								<p>张三</p>
+							</div>
+						</div>
+						<div class="user-wrapper">
+							<div class="user-portrait">
+								<img src="img/noavatar.gif"/>
+							</div>
+							<div class="user-name">
+								<p>张三</p>
+							</div>
+						</div>
+						<div class="user-wrapper">
+							<div class="user-portrait">
+								<img src="img/noavatar.gif"/>
+							</div>
+							<div class="user-name">
+								<p>张三</p>
+							</div>
+						</div>
+					</div><!--有趣的人end-->
+				</div>
+				
+				<div class="login-hotlist-howto">
+					<img src="img/login.gif" />
+					<img class="top10" src="img/title_top10.gif" />
+					<div class="hotlist">
+						<div class="rank">
+							<div class="rank-number-img"><img src="img/num_01.gif" /></div>
+							<div class="star-name"><span>姚晨</span></div>
+							<!--本想“姚晨”和“数字”用不同的标签，数字用<P></P>标签，但是p标签会换行-->
+							<div class="popularity-index"><span>6,665,064</span></div>
+							<!--试试用ul，也可以实现-->
+							<!--<li>
+								<img src="img/num_01.gif"  />
+								<span>姚晨</span>
+								<span>6,665,064</span>
+							</li>-->
+						</div>
+						<div class="rank">
+							<div class="rank-number-img"><img src="img/num_02.gif" /></div>
+							<div class="star-name"><span>姚晨</span></div>
+							<div class="popularity-index"><span>6,665,064</span></div>
+						</div>
+						<div class="rank">
+							<div class="rank-number-img"><img src="img/num_03.gif" /></div>
+							<div class="star-name"><span>姚晨</span></div>
+							<div class="popularity-index"><span>6,665,064</span></div>
+						</div>
+						<div class="rank">
+							<div class="rank-number-img"><img src="img/num_04.gif" /></div>
+							<div class="star-name"><span>姚晨</span></div>
+							<div class="popularity-index"><span>6,665,064</span></div>
+						</div>
+						<div class="rank">
+							<div class="rank-number-img"><img src="img/num_05.gif" /></div>
+							<div class="star-name"><span>姚晨</span></div>
+							<div class="popularity-index"><span>6,665,064</span></div>
+						</div>
+						<div class="rank">
+							<div class="rank-number-img"><img src="img/num_06.gif" /></div>
+							<div class="star-name"><span>蔡康永</span></div>
+							<div class="popularity-index"><span>6,665,064</span></div>
+						</div>
+						<div class="rank">
+							<div class="rank-number-img"><img src="img/num_07.gif" /></div>
+							<div class="star-name"><span>姚晨</span></div>
+							<div class="popularity-index"><span>6,665,064</span></div>
+						</div>
+						<div class="rank">
+							<div class="rank-number-img"><img src="img/num_08.gif" /></div>
+							<div class="star-name"><span>姚晨</span></div>
+							<div class="popularity-index"><span>6,665,064</span></div>
+						</div>
+						<div class="rank">
+							<div class="rank-number-img"><img src="img/num_09.gif" /></div>
+							<div class="star-name"><span>姚晨</span></div>
+							<div class="popularity-index"><span>6,665,064</span></div>
+						</div>
+						<div class="rank">
+							<div class="rank-number-img"><img style="padding-left: 1px;" src="img/num_10.gif" /></div>
+							<div class="star-name"><span>李开复</span></div>
+							<div class="popularity-index"><span>6,665,064</span></div>
+						</div>
+					</div>
+					<div class="howto">
+						<img src="img/icon_mobile.gif"/>
+						<span class="howto-part1">
+							如何用手机上微博<br />
+						</span>
+						<p class="howto-part2">
+							WAP版微博地址:t.sina.cn<br />
+							<a href="">更多方式&gt;&gt;
+						</p>
+					</div>
+				
+				</div>
+			</div>
+			<div class="copyright">
+				<div class="report">
+					<img src="img/jubao.gif"/>
+				</div>
+				<div class="notice" >
+					<p>新浪公司 版权所有</p>
+					<p>语言：中文（简体）</p>
+				
+				</div>
+				<div class="guide">
+					<p><a href="">帮助</a>&nbsp;<a href="">意见反馈</a>&nbsp;<a href="">微博认证及合作</a>&nbsp;
+					
+					<a href="">开放平台</a>&nbsp;<a href="">微博招聘</a>&nbsp;<a href="">新浪网导航</a> </p>
+					
+					<p>
+						客服电话: 400 690 0000 
+						提示音后按1键(按当地市话标准计费)
+					</p>
+				</div>
+			</div>		
+	</body>
+</html>
