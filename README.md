@@ -294,3 +294,166 @@
 
 5.[qq注册页面](https://github.com/wangy325/html-note/blob/master/3-%E8%A1%A8%E5%8D%95/acount-apply.html)是利用div和css设计网页最好的例子，虽然运用的东西并不多，但网页结构明朗。	
 
+### 5 CSS(cascading style sheet 层叠样式表)样式总结
+
+#### 5.1 选择器
+
+##### 标签选择器
+
+```css
+p{
+	font: 16px bold Italic;
+	color：red；
+	text-decoration：underline(none)
+}
+```
+
+##### 类(class)选择器
+
+```css
+.class{
+	padding:0px auto;
+}
+```
+
+##### ID选择器
+
+```css
+#id{
+	background-color:#800000;
+	}
+```
+
+** ID选择器在同一个页面中只能用一次**
+
+#### 5.2 样式优先级
+
+* 行内样式>内部样式>外部样式
+
+* ID选择器>类选择器>标签选择器
+
+** 并不是所有的属性都可以写在css样式里面，或者说（表格/列表）的某些属性就是html
+属性，并不是css样式属性，切不要混淆了
+
+** !important 可以提升样式的优先级
+
+#### 5.3 高级选择器
+
+* 通用选择器
+
+* 子选择器（ul>li）`第一代子元素套用样式`
+
+* 后代选择器（.class p）`某个特定的类里面的p段落套用样式` 
+
+* 交集选择器（div.class）`most used`
+
+* 并集选择器（div,p,li） `已用于设置全局文本格式`
+
+* 相邻选择器 `选择紧接在另一个元素后的元素，而且两者有相同的父元素，可以使用相邻兄弟选择器`
+
+#### 5.4 常用样式属性
+
+##### 5.4.1 字体样式
+```
+font-family:times new roman "楷体"；
+
+font-size:16px(in cm mm pt);
+
+font-style:italic(oblique, normal);
+
+font-weight:bold(er) light(er) normal;
+`
+all in one: font:style weight size family;
+`
+```
+##### 5.4.2 文本样式
+```
+color:red(#00c);
+
+text-align:left/center/right/justify;
+
+text-indent:20px/2em;
+
+line-height:20px;
+
+text-decoration：underline/overline/line-through/blink/none;
+
+vertical-align:middle/top/bottom; `设置图片和文本居中对齐`
+
+letter-sapcing：字符间距
+
+word-spacing：单词间距
+```
+
+##### 5.4.3 背景样式
+```
+background-color:red/transparent;
+
+background-image: url(...);
+
+background-repeat:repeat/no-repeat/repeat-x(y)；
+
+background-position:x% y% / left/center/right top/middle/right;
+
+`
+all in one:background:color image position repeat;
+`
+```
+##### 5.4.4 列表样式
+```
+list-style-type:none/disc/circle/square/decimal;
+
+list-style-image:url();
+
+list-style-position:inside/outside;
+
+`
+all in one:list-style:type position image;
+`
+```
+
+##### 5.4.5 伪类
+
+* 超链接伪类
+
+	a:link ：未单击访问时超链接样式
+
+	a:visited：访问后的样式
+
+	a:hover： 鼠标悬浮其上的样式
+
+	a:active: 鼠标单击未释放的样式
+
+* 其他标签伪类
+
+	:first-child：
+	
+	:last-child：
+	
+	:only-child：
+	
+	:nth-child：
+	
+* 伪元素
+	:first-letter
+	
+	:first-line
+	
+	:after
+	
+	:before
+	
+* 设置鼠标形状 （cursor：pointer）
+	default
+	
+	pointer
+	
+	wait
+	
+	help
+	
+	text
+	
+	crosshair
+	
+		
