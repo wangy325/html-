@@ -1,8 +1,8 @@
 ﻿2017.10月学习html的一些笔记，学习不系统，可能比较零散
 
 ### 1 网页的基本结构
-```html 
-    <html>
+```html
+    <html>
     	<head>
 	    	<title> 网页标题 </title>
 	    	<meta charset="utf-8"/> <!--设定字符编码-->
@@ -86,7 +86,7 @@
 	</ul> 
 ```		
 >*在css样式中，可以设置列表的样式*
-```html
+```
 	ul{
 		list-style:none; /*取消列表前面的排序*/
 		margin:0px;
@@ -119,7 +119,7 @@
 	</table>
 ```
 基本属性：
-```html
+```
 	align="left(default)/center/right" /*水平对齐方式*/
 
 	valign="top/middle(default)/bottom/baseline" /*垂直对齐方式*/
@@ -183,7 +183,7 @@
 ```
 
 2) firstly, creat a new `.css `file, and then write the 
-```html
+```
 				
 	<style type="text/css">
 					
@@ -201,7 +201,7 @@ secondly,  quote the css file by using code below
 
 ##### 3.2.4 table nesting 表格嵌套
 
-```	
+```html	
 	<table>
 		<tr>
 			<td>
@@ -275,8 +275,7 @@ secondly,  quote the css file by using code below
 		<input type="text" >
 		...
 	</fieldset>
-```
-```html
+
 	<lable for="id">提示文本</label>
 		<input type="text" name="gen" value="" id="id" > /*如果在 label 元素内点击文本，就会触发此控件。*/
  ```
