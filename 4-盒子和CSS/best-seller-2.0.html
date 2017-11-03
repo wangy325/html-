@@ -5,21 +5,19 @@
 		<title>畅销书排行版</title>
 		<style type="text/css">
 			div{
-				width: 250px;
-				height: 350px;
+				width: 230px;
+				height: 450px;
 				background-color: #F2F4DF;
 			}
 			
 			li{
-				height: 30px; /*height设定之后，v2.0之后的样式无法实现，因为行高锁死了，relative属性无法生效*/
 				font: 12px "宋体";
 				padding-left: 60px;
 				line-height: 30px;
 				text-decoration: none;
 				list-style: none;
 				background-repeat:no-repeat;
-				background-position: 14% 50%;
-				
+				background-position: 33px 9.5px;
 			}	
 			
 	
@@ -28,15 +26,16 @@
 				font-size:16px;
 				text-indent: 1em; 
 				line-height: 30px;
-				/*background-color: ;*/
 				padding: 0px;
 				color: white;
 				background:#518600 url(img/best-seller/bang.gif) no-repeat 55% 50%
 			}
 			a{
 				color: #198FE7;
+				display: inline-block;
+				
 				text-decoration: inherit;
-				/*line-height: 30;*/
+				
 				
 			}
 			
@@ -48,19 +47,7 @@
 			
 			img{
 				display: none;
-				position: relative; /*图片出现在链接下方，由于高度为70px，作为行内元素不能全部显示，故覆盖部分内容*/
-				left: 100px;
-				top:-55px /*top属性可以设置负值*/
-				/*下面3行用于固定图片的出现位置，做出类似画框的效果*/
-				/*position:absolute
-				left: 180px;
-				top: 60px;*/
-			} 
-			img.long{
-				display: none;
 				position: relative; 
-				left: 150px;
-				top:-55px
 			}
 			a:hover img{
 				display:inline-block;
@@ -73,7 +60,7 @@
 	<body>
 		<div class="best-seller-list">
 			<ul class="list-title">畅销书排行榜</ul>
-			<li style="background: url(img/best-seller/book_no01.gif) 13% 50% no-repeat; padding-right: 70px;"> 
+			<li style="background: url(img/best-seller/book_no01.gif) 30px 5px no-repeat; "> 
 				<a href="">
 					不抱怨的世界(畅...
 					<img src="img/best-seller/index.jpg"/>
@@ -81,13 +68,13 @@
 				
 			</li>
 			<!--直接用p段落实现得了-->
-			<li style="background: url(img/best-seller/book_no02.gif) 13% 50% no-repeat;padding-right: 70px;">
+			<li style="background: url(img/best-seller/book_no02.gif) 30px 5px no-repeat;">
 				<a href="">
 					遇见未知的自己...
 					<img src="img/best-seller/index2.jpg"/>
 				</a>
 			</li>
-			<li style="background: url(img/best-seller/book_no03.gif) 13% 50% no-repeat;padding-right: 70px;">
+			<li style="background: url(img/best-seller/book_no03.gif) 30px 5px no-repeat;">
 				<a href="">
 					活法（季羡林、...
 					<img src="img/best-seller/index3.jpg"/>

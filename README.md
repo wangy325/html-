@@ -1,4 +1,4 @@
-﻿2017.10月学习html的一些笔记，学习不系统，可能比较零散
+2017.10月学习html的一些笔记，学习不系统，可能比较零散
 
 ### 1 网页的基本结构
 ```html
@@ -38,6 +38,7 @@
 
 ##### 粗体、斜体文本：    
 ```html
+
     <strong> 粗体文本</strong>
  
     <em> 斜体文本</em>
@@ -95,7 +96,7 @@
 ```		
 ##### 3.1.3 define-list
 ```html
-	<dl> /*目前已知适用功能 可以控制悬挂缩进*/
+	<dl> /*目前已知适用功能 可以控制悬挂缩进,如上所述*/
 		<dt> content
 			<dd>
 				content
@@ -112,7 +113,7 @@
 	<table>
 		<tr >
 			<td>
-				
+				单元格内容
 			</td>
 		</tr>
 	
@@ -130,7 +131,7 @@
 ```
 ##### 3.2.2 A typical table style code 典型的css样式列表 
 ```html
-	<style type="text/css"> /* 表格全局设定，优先级高于表格正文的设定 , 对现网页内所有表格生效*/
+	<style type="text/css"> /* 表格全局设定，优先级低于表格正文的设定 , 对现网页内所有表格生效*/
 			
 	table {
 		width: 800px; height: 300px; 
@@ -148,6 +149,8 @@
 		border: 1px dashed blue; /*显示单元格边界，1px黑色虚线（实线为solid），只能在td下设置*/
         
 		text-align: center; /*设定文本对齐方式，优先级高于table 内设定*/
+		
+		**！！这是css样式属性，table内设定algin是表格属性，2者不存在优先级问题，下同 **
         
 		border-style:dotted; /*设定单元格边界样式，同第一个设定相同，优先级高*/
         
@@ -333,9 +336,9 @@ p{
 * ID选择器>类选择器>标签选择器
 
 ** 并不是所有的属性都可以写在css样式里面，或者说（表格/列表）的某些属性就是html
-属性，并不是css样式属性，切不要混淆了
+属性，并不是css样式属性，切不要混淆了**
 
-** !important 可以提升样式的优先级
+** !important 可以提升样式的优先级**
 
 #### 5.3 高级选择器
 
@@ -362,9 +365,9 @@ font-size:16px(in cm mm pt);
 font-style:italic(oblique, normal);
 
 font-weight:bold(er) light(er) normal;
-`
+
 all in one: font:style weight size family;
-`
+
 ```
 ##### 5.4.2 文本样式
 ```
@@ -395,9 +398,9 @@ background-repeat:repeat/no-repeat/repeat-x(y)；
 
 background-position:x% y% / left/center/right top/middle/right;
 
-`
+
 all in one:background:color image position repeat;
-`
+
 ```
 ##### 5.4.4 列表样式
 ```
@@ -407,53 +410,110 @@ list-style-image:url();
 
 list-style-position:inside/outside;
 
-`
+
 all in one:list-style:type position image;
-`
+
 ```
 
-##### 5.4.5 伪类
+##### 5.4.5 [伪类(Pseudo-classes)](https://www.w3.org/TR/CSS22/selector.html#pseudo-elements)
 
-* 超链接伪类
+Add special effect to some selecters.
 
-	a:link ：未单击访问时超链接样式
+Syntax:selecter(Elemment):pseudo-class{property:value;}
 
-	a:visited：访问后的样式
+* 超链接伪类（锚伪类）
 
-	a:hover： 鼠标悬浮其上的样式
+	* a:link {color:#ff0000;} /*未单击访问时超链接样式*/
 
-	a:active: 鼠标单击未释放的样式
+	* a:visited {text-decoration: line-through} /*访问后的样式*/
+
+	* a:hover {background-color:yello;} /*鼠标悬停时的样式*/
+
+	* a:active {color：purple;} /*鼠标单击未释放的样式*/
+	
+> 伪类可以和CSS类配合使用
+>
+>	`a.red : visited {color: #FF0000}`
+>	`<a class="red" href="css_syntax.asp">CSS Syntax</a>`
+>
 
 * 其他标签伪类
 
-	:first-child：
+	* :first-child
+	/*The `:first-child` pseudo-class matches an `element` that is the `first child element` of `some other element`.*/
+	```html
+			<!DOCTYPE html>
+			<html>
+				<head>
+					<meta charset="utf-8" />
+					<title>:first-child</title>
+					<style type="text/css">
+						   p:first-child { text-transform: uppercase ;}  /*设置所有元素的第一个<p>子元素为大写*/
+						  
+			/*equals to*/  * > p:first-child{text-transform: uppercase;}
+
+						   div > p:first-child {font-weight: bold;} /*设置所有div元素的第一个<p>子元素字体加粗*/
+						  
+						   p:first-child em { font-weight : bold } /*设置所有<p>元素的第一个<em>子元素为粗体*/
+						   /*等价于  p > em:first-child { font-weight : bold }*/
+					</style>
+				</head>
+				<body>
+					<P> The <em>last</em> P before the note.</p> <!--此行会变成大写-->
+					<DIV class="note">
+						<!--<H2>Note</H2>--> <!--此行存在时，下面<p>元素非为此div的第一子元素-->
+					   <P> The first P inside the note.</P>
+					</DIV>
+					<div class="quote">
+						<p> A light heart lives long. </p>
+						<p> You are <em>apple</em> in my eyes.</p>
+					</div>
+				</body>
+			</html>
+	```
+	* [:last-child](https://css-tricks.com/almanac/selectors/l/last-child/) 
+	/*Allows you to target the last element directly inside its containling element.指定父元素的最后一个子元素的格式，如果指定的子元素错误（不存在），则属于无效设置*/
+		
+			```
+				p:last-child{fontsize:0.75em;} /*指定最后一个p段落子元素的字号为0.75em*/
+				
+				<article>
+				  <p>Lorem ipsum...</p>
+				  
+				  <p>Dolor sit amet...</p>
+				  
+				  <p>Consectetur adipisicing...</p>
+				  
+				  <!--<span>Last paragraph...</span>--> <!--若此行存在，则上述伪类设置无效-->
+				  
+				</article>
+				
+			```
 	
-	:last-child：
+	* :only-child：
 	
-	:only-child：
-	
-	:nth-child：
+	* :nth-child
 	
 * 伪元素
-	:first-letter
+	* :first-letter
 	
-	:first-line
+	* :first-line
 	
-	:after
+	* :after
 	
-	:before
+	* :before
 	
 * 设置鼠标形状 （cursor：pointer）
-	default
+	* default
 	
-	pointer
+	* pointer
 	
-	wait
+	* wait
 	
-	help
+	* help
 	
-	text
+	* text
 	
-	crosshair
+	* crosshair
 	
 		
