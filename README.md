@@ -444,7 +444,7 @@ Syntax:selecter(Elemment):pseudo-class{property:value;}
 	
 >The `:first-child` pseudo-class matches an `element` that is the `first child element` of `some other element`.
 
-	```html
+```html
 			<!DOCTYPE html>
 			<html>
 				<head>
@@ -473,12 +473,12 @@ Syntax:selecter(Elemment):pseudo-class{property:value;}
 					</div>
 				</body>
 			</html>
-	```
+```
 	* [:last-child](https://css-tricks.com/almanac/selectors/l/last-child/) 
 	
 >Allows you to target the last element directly inside its containling element.指定父元素的最后一个子元素的格式，如果指定的子元素错误（不存在），则属于无效设置
 		
-			
+```html			
 				p:last-child{fontsize:0.75em;} /*指定最后一个p段落子元素的字号为0.75em*/
 				
 				<article>
@@ -491,7 +491,7 @@ Syntax:selecter(Elemment):pseudo-class{property:value;}
 				  <!--<span>Last paragraph...</span>--> <!--若此行存在，则上述伪类设置无效-->
 				  
 				</article>
-				
+```				
 			
 	>关于`:lsat-child`和`:last-of-type`的区别，参见[*it targets a particular type of element in a particular arrangement*].(https://css-tricks.com/almanac/selectors/l/last-of-type/)
 	>上述代码块，若样式改为`p:last-of-type{fontsize:0.75em}`，且<span>行存在，也能找到<p>段落
