@@ -327,7 +327,7 @@ p{
 	}
 ```
 
-** ID选择器在同一个页面中只能用一次 **
+**ID选择器在同一个页面中只能用一次**
 
 #### 5.2 样式优先级
 
@@ -357,7 +357,7 @@ p{
 #### 5.4 常用样式属性
 
 ##### 5.4.1 字体样式
-```
+```html
 font-family:times new roman "楷体"；
 
 font-size:16px(in cm mm pt);
@@ -370,7 +370,7 @@ all in one: font:style weight size family;
 
 ```
 ##### 5.4.2 文本样式
-```
+```html
 color:red(#00c);
 
 text-align:left/center/right/justify;
@@ -389,7 +389,7 @@ word-spacing：单词间距
 ```
 
 ##### 5.4.3 背景样式
-```
+```html
 background-color:red/transparent;
 
 background-image: url(...);
@@ -402,7 +402,7 @@ all in one:background:color image position repeat;
 
 ```
 ##### 5.4.4 列表样式
-```
+```html
 list-style-type:none/disc/circle/square/decimal;
 
 list-style-image:url();
@@ -443,6 +443,7 @@ Syntax:selecter(Elemment):pseudo-class{property:value;}
 	* :first-child
 	
 >The `:first-child` pseudo-class matches an `element` that is the `first child element` of `some other element`.
+
 	```html
 			<!DOCTYPE html>
 			<html>
@@ -475,7 +476,7 @@ Syntax:selecter(Elemment):pseudo-class{property:value;}
 	```
 	* [:last-child](https://css-tricks.com/almanac/selectors/l/last-child/) 
 	
-<Allows you to target the last element directly inside its containling element.指定父元素的最后一个子元素的格式，如果指定的子元素错误（不存在），则属于无效设置
+>Allows you to target the last element directly inside its containling element.指定父元素的最后一个子元素的格式，如果指定的子元素错误（不存在），则属于无效设置
 		
 			
 				p:last-child{fontsize:0.75em;} /*指定最后一个p段落子元素的字号为0.75em*/
