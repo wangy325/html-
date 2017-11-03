@@ -327,7 +327,7 @@ p{
 	}
 ```
 
-** ID选择器在同一个页面中只能用一次**
+** ID选择器在同一个页面中只能用一次 **
 
 #### 5.2 样式优先级
 
@@ -336,9 +336,9 @@ p{
 * ID选择器>类选择器>标签选择器
 
 ** 并不是所有的属性都可以写在css样式里面，或者说（表格/列表）的某些属性就是html
-属性，并不是css样式属性，切不要混淆了**
+属性，并不是css样式属性，切不要混淆了 **
 
-** !important 可以提升样式的优先级**
+** !important 可以提升样式的优先级 **
 
 #### 5.3 高级选择器
 
@@ -398,7 +398,6 @@ background-repeat:repeat/no-repeat/repeat-x(y)；
 
 background-position:x% y% / left/center/right top/middle/right;
 
-
 all in one:background:color image position repeat;
 
 ```
@@ -409,7 +408,6 @@ list-style-type:none/disc/circle/square/decimal;
 list-style-image:url();
 
 list-style-position:inside/outside;
-
 
 all in one:list-style:type position image;
 
@@ -440,6 +438,7 @@ Syntax:selecter(Elemment):pseudo-class{property:value;}
 * 其他标签伪类
 
 	* :first-child
+	
 	/*The `:first-child` pseudo-class matches an `element` that is the `first child element` of `some other element`.*/
 	```html
 			<!DOCTYPE html>
@@ -472,6 +471,7 @@ Syntax:selecter(Elemment):pseudo-class{property:value;}
 			</html>
 	```
 	* [:last-child](https://css-tricks.com/almanac/selectors/l/last-child/) 
+	
 	/*Allows you to target the last element directly inside its containling element.指定父元素的最后一个子元素的格式，如果指定的子元素错误（不存在），则属于无效设置*/
 		
 			```
@@ -489,6 +489,8 @@ Syntax:selecter(Elemment):pseudo-class{property:value;}
 				</article>
 				
 			```
+	>关于`:lsat-child`和`last-of-type`的区别，参见[*it targets a particular type of element in a particular arrangement*](https://css-tricks.com/almanac/selectors/l/last-of-type/)
+	>上述代码块，若样式改为`p:last-of-type{fontsize:0.75em}`，且<span>行存在，也能找到<p>段落
 	
 	* :only-child：
 	
