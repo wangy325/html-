@@ -474,6 +474,7 @@ Syntax:selecter(Elemment):pseudo-class{property:value;}
 				</body>
 			</html>
 ```
+
 	* [:last-child](https://css-tricks.com/almanac/selectors/l/last-child/) 
 	
 >Allows you to target the last element directly inside its containling element.指定父元素的最后一个子元素的格式，如果指定的子元素错误（不存在），则属于无效设置
@@ -493,8 +494,9 @@ Syntax:selecter(Elemment):pseudo-class{property:value;}
 				</article>
 ```				
 			
-	>关于`:lsat-child`和`:last-of-type`的区别，参见[*it targets a particular type of element in a particular arrangement*].(https://css-tricks.com/almanac/selectors/l/last-of-type/)
-	>上述代码块，若样式改为`p:last-of-type{fontsize:0.75em}`，且<span>行存在，也能找到<p>段落
+>关于`:lsat-child`和`:last-of-type`的区别，参见[*it targets a particular type of element in a particular arrangement*].(https://css-tricks.com/almanac/selectors/l/last-of-type/)
+
+>上述代码块，若样式改为`p:last-of-type{fontsize:0.75em}`，且<span>行存在，也能找到<p>段落
 	
 	* [:only-child](https://developer.mozilla.org/en-US/docs/Web/CSS/:only-child)
 >represents an element without any siblings. This is the same as :first-child:last-child or :nth-child(1):nth-last-child(1), but with a lower specificity.	
