@@ -289,7 +289,7 @@
 是对div设计网页的一次大胆探索。网页设计的过程中对css样式的引用**杂乱不堪**，既有行内引用，也有基于`.css`样式的外部引用。刚开始，对css还不是很熟练。
 		
 2.[阿里巴巴注册页面](https://github.com/wangy325/html-note/blob/master/3-%E8%A1%A8%E5%8D%95/alibaba.html)
-是利用div和table设计网页的代表，这里利用table较为合理地规避了提示信息和表单的对齐问题。这里特别要补充的一点是：`网页的页头部分，可以用一个div实现的`，需要做好的就是理解好[盒子模型](http://www.runoob.com/css/css-boxmodel.html)的内涵，本次设计中，利用了嵌套的div和表格的方式实现，略显繁琐。
+是利用div和table设计网页的代表，这里利用table较为合理地规避了提示信息和表单的对齐问题。这里特别要补充的一点是：`网页的页头部分，可以用一个div实现的`，需要做好的就是理解好[盒子模型](https://www.w3.org/TR/CSS22/box.html)的内涵，本次设计中，利用了嵌套的div和表格的方式实现，略显繁琐。
 
 3.[人人注册页面](https://github.com/wangy325/html-note/blob/master/3-%E8%A1%A8%E5%8D%95/renren.html)已经是一个利用div实现网页设计很完美的例子了，前面说的网页head部分，也用一个div搞定了。唯一不足之处在于，右边**热门主页**和**游戏**这两个板块，中间还是用了table实现。这里用table实现确实很容易理解，其实用div也是完全可以实现的，把照片和名字用一个div套起来，就可以了。此外还有一种用无序列表(ul)实现的方式，具体的代码可参见[图片+文本](https://github.com/wangy325/html-note/blob/master/3-%E8%A1%A8%E5%8D%95/%E5%A4%B4%E5%83%8F%2B%E6%96%87%E5%AD%97.html)
 
