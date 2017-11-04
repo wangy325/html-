@@ -514,7 +514,7 @@ Syntax:selecter(Elemment):pseudo-class{property:value;}
 
     >applies styles to the first letter of the first line of a block-level element, but only when not preceded by other content (such as images or inline tables).
     >
-    >【百度音乐标签】(https://github.com/wangy325/html-note/blob/master/4-%E7%9B%92%E5%AD%90%E5%92%8CCSS/musictags.html#L22)用到了此伪类。
+    >[百度音乐标签](https://github.com/wangy325/html-note/blob/master/4-%E7%9B%92%E5%AD%90%E5%92%8CCSS/musictags.html#L22)用到了此伪类。
 	
 * :first-line
 	
