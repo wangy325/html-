@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>:first-child</title>
+		<style type="text/css">
+			   p:first-child { text-transform: uppercase ;}  /*设置所有元素的第一个<p>子元素改为大写*/
+			  
+/*equals to*/  * > p:first-child{text-transform: uppercase;}
+
+			   div > p:first-child {font-weight: bold;} /*设置所有div元素的第一个<p>子元素字体加粗*/
+			  
+			  	p:first-child em { font-weight : bold } /*设置所有<p>元素的第一个<em>子元素为粗体*/
+	/*等价于*/		    p > em:first-child { font-weight : bold } 
+			   
+			   
+		</style>
+	</head>
+	<body>
+		<P> The <em>last</em> P before the note.</p> <!--此行会变成大写-->
+		<DIV class="note">
+			<!--<H2>Note</H2>--> <!--此行存在时，下面<p>元素非为此div的第一子元素-->
+		   <P> The first P inside the note.</P>
+		</DIV>
+		<div class="quote">
+			<p> A light heart lives long. </p>
+			<p> You are <em>apple</em> in my eyes.</p>
+		</div>
+	</body>
+</html>
