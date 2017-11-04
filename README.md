@@ -297,7 +297,7 @@
 
 5.[qq注册页面](https://github.com/wangy325/html-note/blob/master/3-%E8%A1%A8%E5%8D%95/acount-apply.html)是利用div和css设计网页最好的例子，虽然运用的东西并不多，但网页结构明朗。	
 
-### 5 CSS(cascading style sheet 层叠样式表)样式总结
+### 5 [CSS](https://www.w3.org/TR/CSS22/)(cascading style sheet 层叠样式表)样式总结
 
 #### 5.1 选择器
 
@@ -338,7 +338,7 @@ p{
 **并不是所有的属性都可以写在css样式里面，或者说（表格/列表）的某些属性就是html
 属性，并不是css样式属性，切不要混淆了**
 
-**`!important]` 可以提升样式的优先级**
+**`!important` 可以提升样式的优先级**
 
 #### 5.3 高级选择器
 
@@ -432,15 +432,14 @@ Syntax:selecter(Elemment):pseudo-class{property:value;}
 > 伪类可以和CSS类配合使用
 >
 >	`a.red : visited {color: #FF0000}`
+>
 >	`<a class="red" href="css_syntax.asp">CSS Syntax</a>`
 >
 >关于hover制作画框的用法，参见[css-gallary.html](https://github.com/wangy325/html-note/blob/master/%E4%BC%AA%E7%B1%BB%EF%BC%88pseudo-classes%EF%BC%89/css-gallery.html)
 >
 >说明的是要注意`position`属性值`relative`和`absolute`之间的差异，以及，`relative`属性值生效的前提是，block区块的的``height`值不能设置。
 
-* 其他标签伪类
-
-	* :first-child
+* :first-child
 	
 >The `:first-child` pseudo-class matches an `element` that is the `first child element` of `some other element`.
 
@@ -475,34 +474,34 @@ Syntax:selecter(Elemment):pseudo-class{property:value;}
 			</html>
 ```
 
-	* [:last-child](https://css-tricks.com/almanac/selectors/l/last-child/) 
+* [:last-child](https://css-tricks.com/almanac/selectors/l/last-child/) 
 	
 >Allows you to target the last element directly inside its containling element.指定父元素的最后一个子元素的格式，如果指定的子元素错误（不存在），则属于无效设置
 		
 ```html			
-				p:last-child{fontsize:0.75em;} /*指定最后一个p段落子元素的字号为0.75em*/
+	p:last-child{fontsize:0.75em;} /*指定最后一个p段落子元素的字号为0.75em*/
 				
-				<article>
-				  <p>Lorem ipsum...</p>
+	<article>
+	  <p>Lorem ipsum...</p>
 				  
-				  <p>Dolor sit amet...</p>
+	  <p>Dolor sit amet...</p>
 				  
-				  <p>Consectetur adipisicing...</p>
+	  <p>Consectetur adipisicing...</p>
 				  
-				  <!--<span>Last paragraph...</span>--> <!--若此行存在，则上述伪类设置无效-->
+	  <!--<span>Last paragraph...</span>--> <!--若此行存在，则上述伪类设置无效-->
 				  
-				</article>
+	</article>
 ```				
 			
->关于`:lsat-child`和`:last-of-type`的区别，参见[*it targets a particular type of element in a particular arrangement*].(https://css-tricks.com/almanac/selectors/l/last-of-type/)
-
+>关于`:lsat-child`和`:last-of-type`的区别，参见[*it targets a particular type of element in a particular arrangement*](https://css-tricks.com/almanac/selectors/l/last-of-type/)
+>
 >上述代码块，若样式改为`p:last-of-type{fontsize:0.75em}`，且<span>行存在，也能找到<p>段落
 	
-	*[:only-child](https://developer.mozilla.org/en-US/docs/Web/CSS/:only-child)
+*[:only-child](https://developer.mozilla.org/en-US/docs/Web/CSS/:only-child)
 	
 >represents an element without any siblings. This is the same as :first-child:last-child or :nth-child(1):nth-last-child(1), but with a lower specificity.	
 	
-	*[:nth-child()](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child)
+*[:nth-child(2n-1)](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child)
 	
 >matches one or more elements based on their position among a group of siblings.
 >
@@ -510,17 +509,18 @@ Syntax:selecter(Elemment):pseudo-class{property:value;}
 	
 	
 * 伪元素（pseudo-elements）
-	* [:first-letter(css2)/::first-letter(css3)](https://developer.mozilla.org/en-US/docs/Web/CSS/::first-letter)
 
->applies styles to the first letter of the first line of a block-level element, but only when not preceded by other content (such as images or inline tables).
->
->【百度音乐标签】(https://github.com/wangy325/html-note/blob/master/4-%E7%9B%92%E5%AD%90%E5%92%8CCSS/musictags.html#L22)用到了此伪类。
+* [:first-letter(css2)/::first-letter(css3)](https://developer.mozilla.org/en-US/docs/Web/CSS/::first-letter)
+
+    >applies styles to the first letter of the first line of a block-level element, but only when not preceded by other content (such as images or inline tables).
+    >
+    >【百度音乐标签】(https://github.com/wangy325/html-note/blob/master/4-%E7%9B%92%E5%AD%90%E5%92%8CCSS/musictags.html#L22)用到了此伪类。
 	
-	* :first-line
+* :first-line
 	
-	* :after
+* :after
 	
-	* :before
+* :before
 	
 * 设置鼠标形状 （cursor：pointer）
 	* default
