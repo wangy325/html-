@@ -2,14 +2,14 @@
 
 ### 1 网页的基本结构
 ```html
-    <html>
+    <html>
     	<head>
-	    	<title> 网页标题 </title>
+	    	<title> 网页标题 </title>
 	    	<meta charset="utf-8"/> <!--设定字符编码-->
 	    </head>
     	<body>
-        网页主体
-    	</body>
+        网页主体
+    	</body>
     </html>
 ```
 ### 2 标签（Lablels）
@@ -33,10 +33,10 @@
 ##### 分组标签:
 
 ```html
-    <span style=" "> text </span> /*分组内容可以设置特殊格式（字体，字号，颜色，加粗等等）*/
+    <span style=" "> text </span> /*分组内容可以设置特殊格式（字体，字号，颜色，加粗等等）*/
 ```
 
-##### 粗体、斜体文本：    
+##### 粗体、斜体文本：    
 ```html
 
     <strong> 粗体文本</strong>
@@ -199,7 +199,7 @@
 
 				
 	<link rel="stylesheet" type="text/css" href="filename.css"/>
-  
+  
 
 ##### 3.2.4 table nesting 表格嵌套
 
@@ -513,6 +513,8 @@ Syntax:selecter(Elemment):pseudo-class{property:value;}
 	* [:first-letter(css2)/::first-letter(css3)](https://developer.mozilla.org/en-US/docs/Web/CSS/::first-letter)
 
 >applies styles to the first letter of the first line of a block-level element, but only when not preceded by other content (such as images or inline tables).
+>
+>【百度音乐标签】(https://github.com/wangy325/html-note/blob/master/4-%E7%9B%92%E5%AD%90%E5%92%8CCSS/musictags.html#L22)用到了此伪类。
 	
 	* :first-line
 	
