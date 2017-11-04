@@ -498,10 +498,11 @@ Syntax:selecter(Elemment):pseudo-class{property:value;}
 
 >上述代码块，若样式改为`p:last-of-type{fontsize:0.75em}`，且<span>行存在，也能找到<p>段落
 	
-	* [:only-child](https://developer.mozilla.org/en-US/docs/Web/CSS/:only-child)
+	*[:only-child](https://developer.mozilla.org/en-US/docs/Web/CSS/:only-child)
+	
 >represents an element without any siblings. This is the same as :first-child:last-child or :nth-child(1):nth-last-child(1), but with a lower specificity.	
 	
-	* [:nth-child()](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child)
+	*[:nth-child()](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child)
 	
 >matches one or more elements based on their position among a group of siblings.
 >
