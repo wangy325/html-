@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>美妆-珠宝</title>
+		<style type="text/css">
+			ul{
+				width: 212px;
+				list-style: none;
+				margin:10px;
+				padding: 0px;
+			}
+			
+			li:first-child{  /*设置第一个元素字体样式*/
+				font-family: "楷体";
+				font-weight: bold;
+				color: white;
+				font-size: 18px;
+				background-color: #9874F2;
+				line-height: 40px;
+				padding-left: 10px;
+			}
+			li:nth-child(n+2){ /*设置其他元素的图片边框样式*/
+				width:210px;
+				height: 96px;
+				border:1px solid gray;
+				/*border-collapse: collapse;*/ /*无效*/
+				margin-top:-1px;
+			}
+			li>img:hover{
+				border:1px solid orange;
+				/*border-collapse: collapse;*/
+				position:relative;
+				/*z-index:2;*/
+			}
+			
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>1F&emsp;美妆&emsp;珠宝</li>
+				
+			<!--视觉效果上，鼠标悬停时，左、上1px灰色边框线还存在，确实也存在，li的宽高+1px；怎么解决？-->
+			<li>
+				<img src="img/jew/photo-1.jpg" />
+			</li>
+			<li>
+				<img src="img/jew/photo-2.jpg" />
+			</li>
+			<li>
+				<img src="img/jew/photo-3.jpg"/>
+			</li>
+			
+			<li>
+				<img src="img/jew/photo-4.jpg" />
+			</li>
+			<li>
+				<img src="img/jew/photo-5.jpg" />
+			</li>
+			
+		</ul>
+	</body>
+</html>
