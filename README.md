@@ -50,15 +50,15 @@
 <h2 id="1"> 1 网页的基本结构</h2>
 
 ```html
-    <html>
-    	<head>
-	    	<title> 网页标题 </title>
-	    	<meta charset="utf-8"/> <!--设定字符编码-->
-	    </head>
-    	<body>
-        网页主体
-    	</body>
-    </html>
+<html>
+    <head>
+	    <title> 网页标题 </title>
+	    <meta charset="utf-8"/> <!--设定字符编码-->
+	</head>
+    <body>
+    	网页主体
+    </body>
+</html>
 ```
 <h2 id="2"> 2 标签（Lablels）</h2>
 
@@ -66,9 +66,9 @@
 
 这分别表示网页的6级标题：
 ```html
-    <h1>文字内容</h1>
-      ...
-    <h6>文字内容</h6>
+<h1>文字内容</h1>
+   ...
+<h6>文字内容</h6>
 ```
 <h3 id="2.2">2.2 特殊符号</h3>
 
@@ -88,9 +88,9 @@
 
 ```html
 
-    <strong> 粗体文本</strong>
+<strong> 粗体文本</strong>
  
-    <em> 斜体文本</em>
+<em> 斜体文本</em>
 ```
 
 *想玩玩不一样的东西？可以试试`< ? style=" ">设置样式的（富）文本</>`，其中"?"代表标签内容，这里面有很多属性值得研究*
@@ -107,7 +107,7 @@
 再对链接文本建立引用
 
 ```html
-    <a href = "mark"> link text </a>
+<a href = "mark"> link text </a>
 ```
 <h4 id="2.4.2">2.4.2 外部链接</h4>
 
@@ -135,22 +135,25 @@
 </ol>
 ```		
 <h4 id="3.1.2">3.1.2 disorder-list</h4>
+
 ```html
-	<ul type="disc"> /*无序列表3种排序方式，默认实心圆圈*/
-		<li type="disc(default)/circle/square"> content </li>
-		...
-		<li> content </li>
-	</ul> 
+<ul type="disc"> /*无序列表3种排序方式，默认实心圆圈*/
+	<li type="disc(default)/circle/square"> content </li>
+	...
+	<li> content </li>
+</ul> 
 ```		
 >*在css样式中，可以设置列表的样式*
-```
-	ul{
-		list-style:none; /*取消列表前面的排序*/
-		margin:0px;
-		padding-left:0px auto; /*外间距和内边距设置，控制ul的强制缩进（不让其缩进）*/
-	}
+
+```css
+ul{
+	list-style:none; /*取消列表前面的排序*/
+	margin:0px;
+	padding-left:0px auto; /*外间距和内边距设置，控制ul的强制缩进（不让其缩进）*/
+}
 ```		
 <h4 id="3.1.3">3.1.3 defin-list</h4>
+
 ```html
 	<dl> /*目前已知适用功能 可以控制悬挂缩进,如上所述*/
 		<dt> content
@@ -166,97 +169,92 @@
 
 基本格式：
 ```html
-	<table>
-		<tr >
-			<td>
-				单元格内容
-			</td>
-		</tr>
-	
-	</table>
+<table>
+	<tr >
+		<td>
+			单元格内容
+		</td>
+	</tr>
+</table>
 ```
 基本属性：
 ```
-	align="left(default)/center/right" /*水平对齐方式*/
+align="left(default)/center/right" /*水平对齐方式*/
 
-	valign="top/middle(default)/bottom/baseline" /*垂直对齐方式*/
+valign="top/middle(default)/bottom/baseline" /*垂直对齐方式*/
 
-	rowspan="x" /*跨行*/
+rowspan="x" /*跨行*/
 
-	colspan="y" /*跨列*/
+colspan="y" /*跨列*/
 ```
+
 <h4 id="3.2.2">3.2.2 A typical table style code 典型的css样式列表 </h4>
+
 ```html
-	<style type="text/css"> /* 表格全局设定，优先级低于表格正文的设定 , 对现网页内所有表格生效*/
+
+<style type="text/css"> /* 表格全局设定，优先级低于表格正文的设定 , 对现网页内所有表格生效*/
 			
-	table {
-		width: 800px; height: 300px; 
+table {
+	width: 800px; height: 300px; 
           
-		margin:0px auto; /* 顶端边距0px， 左右居中*/
+	margin:0px auto; /* 顶端边距0px， 左右居中*/
          
-		border-spacing: 0px; /*单元格边距调为0px，将单元格边界重合（默认不重合）*/
+	border-spacing: 0px; /*单元格边距调为0px，将单元格边界重合（默认不重合）*/
          
-		border-collapse:collapse; /*接上个设定，将重合的单元格边界只显示一个（去掉线条颜色加深）*/ 
+	border-collapse:collapse; /*接上个设定，将重合的单元格边界只显示一个（去掉线条颜色加深）*/ 
           
-		color: black;/*设定文本颜色，优先级低，table内可以重新定义颜色*/ 
-	}
+	color: black;/*设定文本颜色，优先级低，table内可以重新定义颜色*/ 
+}
 	
-	 td {
-		border: 1px dashed blue; /*显示单元格边界，1px黑色虚线（实线为solid），只能在td下设置*/
+ td {
+	border: 1px dashed blue; /*显示单元格边界，1px黑色虚线（实线为solid），只能在td下设置*/
         
-		text-align: center; /*设定文本对齐方式，优先级高于table 内设定*/
+	text-align: center; /*设定文本对齐方式，优先级高于table 内设定*/
 		
-		**！！这是css样式属性，table内设定algin是表格属性，2者不存在优先级问题，下同 **
+	**！！这是css样式属性，table内设定algin是表格属性，2者不存在优先级问题，下同 **
+       
+	border-style:dotted; /*设定单元格边界样式，同第一个设定相同，优先级高*/
         
-		border-style:dotted; /*设定单元格边界样式，同第一个设定相同，优先级高*/
-        
-		border-color: black; /*设定单元格边框颜色，同第一个设定相同，优先级高*/
+	border-color: black; /*设定单元格边框颜色，同第一个设定相同，优先级高*/
 				
-	}
+}
 			
-	.a{
-		background-color:beige; /* 设定分组a的背景颜色*/
+.a{
+	background-color:beige; /* 设定分组a的背景颜色*/
         
-		/*text-align: left; 设定分组的对齐方式*/	
-	}
+	/*text-align: left; 设定分组的对齐方式*/	
+}
 			
-	.b{
-		background-color: honeydew; /* 设定分组b的背景颜色*/
-	}
- 	</style>
+.b{
+	background-color: honeydew; /* 设定分组b的背景颜色*/
+}
+</style>
 ```
 
 <h4 id="3.2.3">3.2.3 2种使其生效的方法</h4>
 
 1. code it within `<head> </head>`
 ```html
-			
-	<head>
-		<title> title </title>
-				
-		<style type="text/css"> 
-					
-			type setting
-		</style>
-	</head>
-```
-2. firstly, creat a new `.css `file, and then write the 
-```
-				
-	<style type="text/css">
-					
+<head>
+	<title> title </title>				
+	<style type="text/css"> 			
 		type setting
 	</style>
+</head>
+```
+2. firstly, creat a new `.css `file, and then write the 
+```css		
+<style type="text/css">					
+	type setting
+</style>
 
 ```
- into the file;
+into the file;
 				
- secondly,  quote the css file by using code below
-
-				
+secondly,  quote the css file by using code below
+			
 	<link rel="stylesheet" type="text/css" href="filename.css"/>
   
-
 <h4 id="3.2.4">3.2.4 table nesting 表格嵌套</h4>
 
 ```html	
@@ -281,9 +279,11 @@
 		</tr>
 	</table>
 ```
+
 <h2 id="4">4 表单</h2>
 
 <h3 id="4.1">4.1表单基本表现</h3>
+
 ```html
 	<form method="post/get" action=""> /* "action"表示向何处发送数据*/
 	
@@ -300,6 +300,7 @@
 
 ```
 <h3 id="4.2">4.2 表单的type属性</h3>
+
 >text，指定为普通文本框 默认属性
 >
 >password 指定为密码框（隐藏输入内容）
@@ -323,21 +324,24 @@
 >...
 
 <h3 id="4.3">4.3 文本域</h3>
+
 ```html
-	<textarea  name="showText"  cols="x"  rows="y">文本内容 </textarea >
-	/*样式设置： style="resize:none;" 可固定文本域大小*/
+<textarea  name="showText"  cols="x"  rows="y">文本内容 </textarea >
+/*样式设置： style="resize:none;" 可固定文本域大小*/
 ```
 <h3 id="4.4">4.4 fieldset和label 标签</h3>
-```html
-	<fieldset>
-		<legend>表单名</legengd> /*用于制作带标题的边框*/
-		<input type="text" >
-		...
-	</fieldset>
 
-	<lable for="id">提示文本</label>
-		<input type="text" name="gen" value="" id="id" > /*如果在 label 元素内点击文本，就会触发此控件。*/
+```html
+<fieldset>
+	<legend>表单名</legengd> /*用于制作带标题的边框*/
+	<input type="text" >
+	...
+</fieldset>
+
+<lable for="id">提示文本</label>
+	<input type="text" name="gen" value="" id="id" > /*如果在 label 元素内点击文本，就会触发此控件。*/
  ```
+ 
 >贴士：利用fieldset制作带标题的边框的时候，可以设置margin-style来设置表单名的缩进
 
 <h3 id="4.5">4.5 关于列表，表单，div css的综合应用几点总结</h3>
@@ -414,6 +418,7 @@ p{
 <h3 id="5.4">5.4 常用样式属性</h3>
 
 <h4 id="5.4.1">5.4.1 字体样式</h4>
+
 ```html
 font-family:times new roman "楷体"；
 
@@ -427,6 +432,7 @@ all in one: font:style weight size family;
 
 ```
 <h4 id="5.4.2">5.4.2 文本样式</h4>
+
 ```html
 color:red(#00c);
 
@@ -446,6 +452,7 @@ word-spacing：单词间距
 ```
 
 <h4 id="5.4.3">5.4.3 背景样式</h4>
+
 ```html
 background-color:red/transparent;
 
@@ -459,6 +466,7 @@ all in one:background:color image position repeat;
 
 ```
 <h4 id="5.4.4">5.4.4 列表样式</h4>
+
 ```html
 list-style-type:none/disc/circle/square/decimal;
 
@@ -471,6 +479,7 @@ all in one:list-style:type position image;
 ```
 
 <h4 id="5.4.5">设置鼠标形状 （cursor：pointer）</h4>
+
 * default
 	
 * pointer
@@ -507,42 +516,43 @@ Syntax:selecter(Elemment):pseudo-class{property:value;}
 >
 >关于hover制作画框的用法，参见[css-gallary.html](https://github.com/wangy325/html-note/blob/master/%E4%BC%AA%E7%B1%BB%EF%BC%88pseudo-classes%EF%BC%89/css-gallery.html)
 >
->说明的是要注意`position`属性值`relative`和`absolute`之间的差异，以及，`relative`属性值生效的前提是，block区块的的``height`值不能设置。
+>说明的是要注意`position`属性值`relative`和`absolute`之间的差异，以及，`relative`属性值生效的前提是，block区块的的``height`值不能设置
 
 <h4 id="5.5.2">伪元素（pseudo-elements）</h4>
-* :first-child
+
+* [:first-child](https://www.w3.org/TR/CSS22/selector.html#first-child)
 	
 >The `:first-child` pseudo-class matches an `element` that is the `first child element` of `some other element`.
 
 ```html
-			<!DOCTYPE html>
-			<html>
-				<head>
-					<meta charset="utf-8" />
-					<title>:first-child</title>
-					<style type="text/css">
-						   p:first-child { text-transform: uppercase ;}  /*设置所有元素的第一个<p>子元素为大写*/
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8" />
+			<title>:first-child</title>
+			<style type="text/css">
+				p:first-child { text-transform: uppercase ;}  /*设置所有元素的第一个<p>子元素为大写*/
 						  
-			/*equals to*/  * > p:first-child{text-transform: uppercase;}
+/*equals to*/  * > p:first-child{text-transform: uppercase;}
 
-						   div > p:first-child {font-weight: bold;} /*设置所有div元素的第一个<p>子元素字体加粗*/
+				div > p:first-child {font-weight: bold;} /*设置所有div元素的第一个<p>子元素字体加粗*/
 						  
-						   p:first-child em { font-weight : bold } /*设置所有<p>元素的第一个<em>子元素为粗体*/
-						   /*等价于  p > em:first-child { font-weight : bold }*/
-					</style>
-				</head>
-				<body>
-					<P> The <em>last</em> P before the note.</p> <!--此行会变成大写-->
-					<DIV class="note">
-						<!--<H2>Note</H2>--> <!--此行存在时，下面<p>元素非为此div的第一子元素-->
-					   <P> The first P inside the note.</P>
-					</DIV>
-					<div class="quote">
-						<p> A light heart lives long. </p>
-						<p> You are <em>apple</em> in my eyes.</p>
-					</div>
-				</body>
-			</html>
+				p:first-child em { font-weight : bold } /*设置所有<p>元素的第一个<em>子元素为粗体*/
+				/*等价于  p > em:first-child { font-weight : bold }*/
+			</style>
+		</head>
+		<body>
+			<P> The <em>last</em> P before the note.</p> <!--此行会变成大写-->
+			<DIV class="note">
+			<!--<H2>Note</H2>--> <!--此行存在时，下面<p>元素非为此div的第一子元素-->
+			<P> The first P inside the note.</P>
+			</DIV>
+			<div class="quote">
+				<p> A light heart lives long. </p>
+				<p> You are <em>apple</em> in my eyes.</p>
+			</div>
+		</body>
+</html>
 ```
 
 * [:last-child](https://css-tricks.com/almanac/selectors/l/last-child/) 
@@ -550,29 +560,29 @@ Syntax:selecter(Elemment):pseudo-class{property:value;}
 >Allows you to target the last element directly inside its containling element.指定父元素的最后一个子元素的格式，如果指定的子元素错误（不存在），则属于无效设置
 		
 ```html			
-	p:last-child{fontsize:0.75em;} /*指定最后一个p段落子元素的字号为0.75em*/
+p:last-child{fontsize:0.75em;} /*指定最后一个p段落子元素的字号为0.75em*/
 				
-	<article>
-	  <p>Lorem ipsum...</p>
+<article>
+	<p>Lorem ipsum...</p>
 				  
-	  <p>Dolor sit amet...</p>
+	<p>Dolor sit amet...</p>
 				  
-	  <p>Consectetur adipisicing...</p>
+	<p>Consectetur adipisicing...</p>
 				  
-	  <!--<span>Last paragraph...</span>--> <!--若此行存在，则上述伪类设置无效-->
+	<!--<span>Last paragraph...</span>--> <!--若此行存在，则上述伪类设置无效-->
 				  
-	</article>
+</article>
 ```				
 			
 >关于`:lsat-child`和`:last-of-type`的区别，参见[*it targets a particular type of element in a particular arrangement*](https://css-tricks.com/almanac/selectors/l/last-of-type/)
 >
 >上述代码块，若样式改为`p:last-of-type{fontsize:0.75em}`，且<span>行存在，也能找到<p>段落
 	
-*[:only-child](https://developer.mozilla.org/en-US/docs/Web/CSS/:only-child)
+* [:only-child](https://developer.mozilla.org/en-US/docs/Web/CSS/:only-child)
 	
 >represents an element without any siblings. This is the same as :first-child:last-child or :nth-child(1):nth-last-child(1), but with a lower specificity.	
 	
-*[:nth-child(2n-1)](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child)
+* [:nth-child(2n-1)](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child)
 	
 >matches one or more elements based on their position among a group of siblings.
 >
