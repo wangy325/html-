@@ -147,21 +147,21 @@
 
 ```css
 ul{
-	list-style:none; /*取消列表前面的排序*/
+list-style:none; /*取消列表前面的排序*/
 	margin:0px;
 	padding-left:0px auto; /*外间距和内边距设置，控制ul的强制缩进（不让其缩进）*/
 }
 ```		
-<h4 id="3.1.3">3.1.3 defin-list</h4>
+<h4 id="3.1.3">3.1.3 define-list</h4>
 
 ```html
-	<dl> /*目前已知适用功能 可以控制悬挂缩进,如上所述*/
-		<dt> content
-			<dd>
-				content
-			</dd>
-		</dt>
-	</dl>
+<dl> /*目前已知适用功能 可以控制悬挂缩进,如上所述*/
+	<dt> content
+		<dd>
+			content
+		</dd>
+	</dt>
+</dl>
 ```		
 <h3 id="3.2">3.2 表格（table）</h3>
 
@@ -358,9 +358,9 @@ secondly,  quote the css file by using code below
 
 5.[qq注册页面](https://github.com/wangy325/html-note/blob/master/3-%E8%A1%A8%E5%8D%95/acount-apply.html)是利用div和css设计网页最好的例子，虽然运用的东西并不多，但网页结构明朗。	
 
-<h2 id="5">5 [CSS](https://www.w3.org/TR/CSS22/)(cascading style sheet 层叠样式表)样式总结</h2>
+<h2 id="5">5 [CSS](https://www.w3.org/TR/CSS22/) (cascading style sheet)样式总结</h2>
 
-<h3 id="5.1>"5.1 选择器</h3>
+<h3 id="5.1>5.1 选择器</h3>
 
 <h4 id="5.1.1">标签选择器</h4>
 
