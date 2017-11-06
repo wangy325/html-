@@ -6,7 +6,7 @@
 	* [2.2 特殊符号](#2.2)
 	* [2.3 格式标签](#2.3)
 		* [2.3.1 分组标签](#2.3.1)
-		* [2.3.2 粗体、斜体文本](#2.4.1)
+		* [2.3.2 粗体、斜体文本](#2.3.1)
 	* [2.4 链接标签](#2.4)
 		* [2.4.1 页面内部链接](#2.4.1)
 		* [2.4.2 外部链接](#2.4.2)
@@ -81,10 +81,11 @@
 <h4 id="2.3.1">分组标签</h4>
 
 ```html
-    <span style=" "> text </span> /*分组内容可以设置特殊格式（字体，字号，颜色，加粗等等）*/
+<span style=" "> text </span> /*分组内容可以设置特殊格式（字体，字号，颜色，加粗等等）*/
 ```
 
 <h4 id="2.3.2">粗体、斜体文本</h4>
+
 ```html
 
     <strong> 粗体文本</strong>
@@ -92,39 +93,46 @@
     <em> 斜体文本</em>
 ```
 
-想玩点不一样的东西，可以试试`< ? style=" ">设置样式的（富）文本</>`，其中"?"代表标签内容，这里面有很多属性值得研究
+*想玩玩不一样的东西？可以试试`< ? style=" ">设置样式的（富）文本</>`，其中"?"代表标签内容，这里面有很多属性值得研究*
 
 <h3 id="2.4">2.4 链接标签</h3>
 
 <h4 id="2.4.1">2.4.1 页面内部链接</h4>
 
 先添加链接目的地的标签：
+
 ```html
-    <a name = "mark"> destnation text </a>
+<a name = "mark"> destnation text </a>
 ```
 再对链接文本建立引用
+
 ```html
     <a href = "mark"> link text </a>
 ```
 <h4 id="2.4.2">2.4.2 外部链接</h4>
+
 ```html
-    <a> href = "path" target = "_self(_blank)"</a>
-```    
+<a> href = "path" target = "_self(_blank)"</a>
+``` 
+
 <h4 id="2.4.3">2.4.3 图片引用</h4>
+
 ```html
-    <img src="path" alt="replace text(img url is null)" title = "promote info" width = "x" height = "y"/>
-```    
+<img src="path" alt="replace text(img url is null)" title = "promote info" width = "x" height = "y"/>
+```
+
 <h2 id="3">3 列表和表格</h2>
 
 <h3 id="3.1"> 3.1 列表（list）</h3>
 
 <h4 id="3.1.1">3.1.1 order-list</h4>
+
 ```html
-	<ol type="A/a/I/i/1"> /*有序列表5大排序方式，数字默认*/
-		<li > content </li>
-		...
-		<li> content </li>
-	</ol>
+<ol type="A/a/I/i/1"> /*有序列表5大排序方式，数字默认*/
+	<li > content </li>
+	...
+	<li> content </li>
+</ol>
 ```		
 <h4 id="3.1.2">3.1.2 disorder-list</h4>
 ```html
