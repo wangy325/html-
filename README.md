@@ -3,6 +3,47 @@
 * [1 网页的基本结构](#1)
 * [2 标签](#2)
 	* [2.1 标题](#2.1)
+	* [2.2 特殊符号](#2.2)
+	* [2.3 格式标签](#2.3)
+		* [2.3.1 分组标签](#2.3.1)
+		* [2.3.2 粗体、斜体文本](#2.4.1)
+	* [2.4 链接标签](#2.4)
+		* [2.4.1 页面内部链接](#2.4.1)
+		* [2.4.2 外部链接](#2.4.2)
+		* [2.4.3 图片引用](#2.4.3)
+* [3 列表和表格](#3)
+	* [3.1 列表](#3.1)
+		* [3.1.1 有序列表](#3.1.1)
+		* [3.1.2 无序列表](#3.1.2)
+		* [3.1.3 定义列表](#3.1.3)
+	* [3.2 表格](#3.2)
+		* [3.2.1 基本格式](#3.2.1)
+		* [3.2.2 典型的css样式列表](#3.2.2)
+		* [3.2.3 2种使其生效的方法](#3.2.3)
+		* [3.2.4 表格嵌套](#3.2.4)
+* [4 表单](#4)
+	* [4.1 表单基本表现](#4.1)
+	* [4.2 表单的type属性](#4.2)
+	* [4.3 文本域](#4.3)
+	* [4.4 fieldset和label标签](#4.4)
+	* [4.5 关于列表，表单，div css的综合应用几点总结](#4.5)
+* [5 CSS(cascading style sheet 层叠样式表)](#5)
+	* [5.1 选择器](#5.1)
+		* [5.1.1 标签选择器](#5.1.1)
+		* [5.1.2 类(class)选择器](#5.1.2)
+		* [5.1.3 ID选择器](#5.1.3)
+	* [5.2 样式优先级](#5.2)
+	* [5.3 高级选择器](#5.3)
+	* [5.4 常用样式属性](#5.4)
+		* [5.4.1 字体样式](#5.4.1)
+		* [5.4.2 文本样式](#5.4.2)
+		* [5.4.3 背景样式](#5.4.3)
+		* [5.4.4 列表样式](#5.4.4)
+		* [5.4.5 鼠标样式](#5.4.5)
+	* [5.5 伪类](#5.5)
+		* [5.5.1 超链接伪类（锚伪类）](#5.5.1)
+		* [5.5.2 元素伪类](#5.5.2)
+	
 
 ===============
 
@@ -29,21 +70,21 @@
       ...
     <h6>文字内容</h6>
 ```
-#### 2.2 特殊符号
+<h3 id="2.2">2.2 特殊符号</h3>
 
 如**换行符**用`<br/>`表示，在网页中加入**水平线**用`<hr/>`, 插入**空格**一般用`&emsp;`或者`&nbsp;`，还有一些特殊符号如`&gt;`和`&lt;`分别表示“&gt;” 和“&lt;”号
 
 引号`&quot;`；版权符号`&copy;`
 
-#### 2.3 格式标签
+<h3 id="2.3">2.3 格式标签</h3>
 
-##### 分组标签:
+<h4 id="2.3.1">分组标签</h4>
 
 ```html
     <span style=" "> text </span> /*分组内容可以设置特殊格式（字体，字号，颜色，加粗等等）*/
 ```
 
-##### 粗体、斜体文本：    
+<h4 id="2.3.2">粗体、斜体文本</h4>
 ```html
 
     <strong> 粗体文本</strong>
@@ -53,9 +94,9 @@
 
 想玩点不一样的东西，可以试试`< ? style=" ">设置样式的（富）文本</>`，其中"?"代表标签内容，这里面有很多属性值得研究
 
-#### 2.4 链接标签
+<h3 id="2.4">2.4 链接标签</h3>
 
-##### 2.4.1 页面内部链接
+<h4 id="2.4.1">2.4.1 页面内部链接</h4>
 
 先添加链接目的地的标签：
 ```html
@@ -65,19 +106,19 @@
 ```html
     <a href = "mark"> link text </a>
 ```
-##### 2.4.2 外部链接
+<h4 id="2.4.2">2.4.2 外部链接</h4>
 ```html
     <a> href = "path" target = "_self(_blank)"</a>
 ```    
-##### 2.4.3 图片引用：
+<h4 id="2.4.3">2.4.3 图片引用</h4>
 ```html
     <img src="path" alt="replace text(img url is null)" title = "promote info" width = "x" height = "y"/>
 ```    
-### 3 列表和表格
+<h2 id="3">3 列表和表格</h2>
 
-#### 3.1 列表（list）
+<h3 id="3.1"> 3.1 列表（list）</h3>
 
-##### 3.1.1 order-list
+<h4 id="3.1.1">3.1.1 order-list</h4>
 ```html
 	<ol type="A/a/I/i/1"> /*有序列表5大排序方式，数字默认*/
 		<li > content </li>
@@ -85,7 +126,7 @@
 		<li> content </li>
 	</ol>
 ```		
-##### 3.1.2 disorder-list
+<h4 id="3.1.2">3.1.2 disorder-list</h4>
 ```html
 	<ul type="disc"> /*无序列表3种排序方式，默认实心圆圈*/
 		<li type="disc(default)/circle/square"> content </li>
@@ -101,7 +142,7 @@
 		padding-left:0px auto; /*外间距和内边距设置，控制ul的强制缩进（不让其缩进）*/
 	}
 ```		
-##### 3.1.3 define-list
+<h4 id="3.1.3">3.1.3 defin-list</h4>
 ```html
 	<dl> /*目前已知适用功能 可以控制悬挂缩进,如上所述*/
 		<dt> content
@@ -111,9 +152,9 @@
 		</dt>
 	</dl>
 ```		
-#### 3.2 表格（table）
+<h3 id="3.2">3.2 表格（table）</h3>
 
-##### 3.2.1 basical format
+<h4 id="3.2.1">3.2.1 basical format</h4>
 
 基本格式：
 ```html
@@ -136,7 +177,7 @@
 
 	colspan="y" /*跨列*/
 ```
-##### 3.2.2 A typical table style code 典型的css样式列表 
+<h4 id="3.2.2">3.2.2 A typical table style code 典型的css样式列表 </h4>
 ```html
 	<style type="text/css"> /* 表格全局设定，优先级低于表格正文的设定 , 对现网页内所有表格生效*/
 			
@@ -177,9 +218,9 @@
  	</style>
 ```
 
-##### 3.2.3 2种使其生效的方法：
+<h4 id="3.2.3">3.2.3 2种使其生效的方法</h4>
 
-1）code it within `<head> </head>`
+1. code it within `<head> </head>`
 ```html
 			
 	<head>
@@ -191,7 +232,7 @@
 		</style>
 	</head>
 ```
-2) firstly, creat a new `.css `file, and then write the 
+2. firstly, creat a new `.css `file, and then write the 
 ```
 				
 	<style type="text/css">
@@ -208,7 +249,7 @@
 	<link rel="stylesheet" type="text/css" href="filename.css"/>
   
 
-##### 3.2.4 table nesting 表格嵌套
+<h4 id="3.2.4">3.2.4 table nesting 表格嵌套</h4>
 
 ```html	
 	<table>
@@ -232,8 +273,9 @@
 		</tr>
 	</table>
 ```
-### 4 表单
-#### 4.1表单基本表现
+<h2 id="4">4 表单</h2>
+
+<h3 id="4.1">4.1表单基本表现</h3>
 ```html
 	<form method="post/get" action=""> /* "action"表示向何处发送数据*/
 	
@@ -249,7 +291,7 @@
 	</form>
 
 ```
-#### 4.2 表单的type属性
+<h3 id="4.2">4.2 表单的type属性</h3>
 >text，指定为普通文本框 默认属性
 >
 >password 指定为密码框（隐藏输入内容）
@@ -272,12 +314,12 @@
 >
 >...
 
-#### 4.3 文本域
+<h3 id="4.3">4.3 文本域</h3>
 ```html
 	<textarea  name="showText"  cols="x"  rows="y">文本内容 </textarea >
 	/*样式设置： style="resize:none;" 可固定文本域大小*/
 ```
-#### 4.4 fieldset 和label 标签
+<h3 id="4.4">4.4 fieldset和label 标签</h3>
 ```html
 	<fieldset>
 		<legend>表单名</legengd> /*用于制作带标题的边框*/
@@ -290,7 +332,7 @@
  ```
 >贴士：利用fieldset制作带标题的边框的时候，可以设置margin-style来设置表单名的缩进
 
-#### 4.5 关于列表，表单，div css的综合应用几点总结
+<h3 id="4.5">4.5 关于列表，表单，div css的综合应用几点总结</h3>
 
 1.[网易邮箱登录页面](https://github.com/wangy325/html-note/blob/master/3-%E8%A1%A8%E5%8D%95/netease.html)
 是对div设计网页的一次大胆探索。网页设计的过程中对css样式的引用**杂乱不堪**，既有行内引用，也有基于`.css`样式的外部引用。刚开始，对css还不是很熟练。
@@ -304,11 +346,11 @@
 
 5.[qq注册页面](https://github.com/wangy325/html-note/blob/master/3-%E8%A1%A8%E5%8D%95/acount-apply.html)是利用div和css设计网页最好的例子，虽然运用的东西并不多，但网页结构明朗。	
 
-### 5 [CSS](https://www.w3.org/TR/CSS22/)(cascading style sheet 层叠样式表)样式总结
+<h2 id="5">5 [CSS](https://www.w3.org/TR/CSS22/)(cascading style sheet 层叠样式表)样式总结</h2>
 
-#### 5.1 选择器
+<h3 id="5.1>"5.1 选择器</h3>
 
-##### 标签选择器
+<h4 id="5.1.1">标签选择器</h4>
 
 ```css
 p{
@@ -318,7 +360,7 @@ p{
 }
 ```
 
-##### 类(class)选择器
+<h4 id="5.1.2">类(class)选择器</h4>
 
 ```css
 .class{
@@ -326,7 +368,7 @@ p{
 }
 ```
 
-##### ID选择器
+<h4 id="5.1.3">ID选择器</h4>
 
 ```css
 #id{
@@ -336,7 +378,7 @@ p{
 
 **ID选择器在同一个页面中只能用一次**
 
-#### 5.2 样式优先级
+<h3 id="5.2">5.2 样式优先级</h3>
 
 * 行内样式>内部样式>外部样式
 
@@ -347,7 +389,7 @@ p{
 
 **`!important` 可以提升样式的优先级**
 
-#### 5.3 高级选择器
+<h3 id="5.3">5.3 高级选择器</h3>
 
 * 通用选择器
 
@@ -361,9 +403,9 @@ p{
 
 * 相邻选择器 `选择紧接在另一个元素后的元素，而且两者有相同的父元素，可以使用相邻兄弟选择器`
 
-#### 5.4 常用样式属性
+<h3 id="5.4">5.4 常用样式属性</h3>
 
-##### 5.4.1 字体样式
+<h4 id="5.4.1">5.4.1 字体样式</h4>
 ```html
 font-family:times new roman "楷体"；
 
@@ -376,7 +418,7 @@ font-weight:bold(er) light(er) normal;
 all in one: font:style weight size family;
 
 ```
-##### 5.4.2 文本样式
+<h4 id="5.4.2">5.4.2 文本样式</h4>
 ```html
 color:red(#00c);
 
@@ -395,7 +437,7 @@ letter-sapcing：字符间距
 word-spacing：单词间距
 ```
 
-##### 5.4.3 背景样式
+<h4 id="5.4.3">5.4.3 背景样式</h4>
 ```html
 background-color:red/transparent;
 
@@ -408,7 +450,7 @@ background-position:x% y% / left/center/right top/middle/right;
 all in one:background:color image position repeat;
 
 ```
-##### 5.4.4 列表样式
+<h4 id="5.4.4">5.4.4 列表样式</h4>
 ```html
 list-style-type:none/disc/circle/square/decimal;
 
@@ -420,21 +462,34 @@ all in one:list-style:type position image;
 
 ```
 
-##### 5.4.5 [伪类(Pseudo-classes)](https://www.w3.org/TR/CSS22/selector.html#pseudo-elements)
+<h4 id="5.4.5">设置鼠标形状 （cursor：pointer）</h4>
+* default
+	
+* pointer
+	
+* wait
+	
+* help
+	
+* text
+	
+* crosshair
+
+<h3 id="5.5">5.5 [伪类(Pseudo-classes)](https://www.w3.org/TR/CSS22/selector.html#pseudo-elements)</h3>
 
 Add special effect to some selecters.
 
 Syntax:selecter(Elemment):pseudo-class{property:value;}
 
-* 超链接伪类（锚伪类）
+<h4 id="5.5.1">超链接伪类（锚伪类）</h4>
 
-	* a:link {color:#ff0000;} /*未单击访问时超链接样式*/
+* a:link {color:#ff0000;} /*未单击访问时超链接样式*/
 
-	* a:visited {text-decoration: line-through} /*访问后的样式*/
+* a:visited {text-decoration: line-through} /*访问后的样式*/
 
-	* a:hover {background-color:yello;} /*鼠标悬停时的样式*/
+* a:hover {background-color:yello;} /*鼠标悬停时的样式*/
 
-	* a:active {color：purple;} /*鼠标单击未释放的样式*/
+* a:active {color：purple;} /*鼠标单击未释放的样式*/
 	
 > 伪类可以和CSS类配合使用
 >
@@ -446,6 +501,7 @@ Syntax:selecter(Elemment):pseudo-class{property:value;}
 >
 >说明的是要注意`position`属性值`relative`和`absolute`之间的差异，以及，`relative`属性值生效的前提是，block区块的的``height`值不能设置。
 
+<h4 id="5.5.2">伪元素（pseudo-elements）</h4>
 * :first-child
 	
 >The `:first-child` pseudo-class matches an `element` that is the `first child element` of `some other element`.
@@ -513,9 +569,6 @@ Syntax:selecter(Elemment):pseudo-class{property:value;}
 >matches one or more elements based on their position among a group of siblings.
 >
 >更多多信息参考伪类文件夹中[nth-child.html](https://github.com/wangy325/html-note/blob/master/%E4%BC%AA%E7%B1%BB%EF%BC%88pseudo-classes%EF%BC%89/nth-child.html)
-	
-	
-* 伪元素（pseudo-elements）
 
 * [:first-letter(css2)/::first-letter(css3)](https://developer.mozilla.org/en-US/docs/Web/CSS/::first-letter)
 
@@ -529,17 +582,6 @@ Syntax:selecter(Elemment):pseudo-class{property:value;}
 	
 * :before
 	
-* 设置鼠标形状 （cursor：pointer）
-	* default
-	
-	* pointer
-	
-	* wait
-	
-	* help
-	
-	* text
-	
-	* crosshair
+
 	
 		

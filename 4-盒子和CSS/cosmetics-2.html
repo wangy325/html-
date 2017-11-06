@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>大家都喜欢的彩妆品牌</title>
+		<style type="text/css">
+			ul{
+				margin: 0px;
+				padding: 0px;
+				list-style: none;
+				width: 300px;
+				border: 5px solid #EBE2DB;
+			}
+			li:first-child{
+				line-height: 40px;
+				font-size: 16px;
+				font-family: "宋体";
+				font-weight: bold;
+				color: white;
+				background-color: #E9185A;
+				padding-left: 10px;
+			}
+			li:nth-child(n+2){
+				font-size: 14px;
+				padding:10px;
+				border-bottom: 1px dashed gray;
+				background: url(img/cosmetics/dot_01.gif) no-repeat 1px 8px;
+			}
+			li:first-letter{
+				color: white;
+			}
+			
+			li:nth-child(n+2):hover{
+				background: url(img/cosmetics/dot_02.gif) no-repeat 1px 8px;
+				color: #E9185A;
+				cursor: pointer; /*设置鼠标形状 ， 这里没给链接，所以要设置一下，不然鼠标形状为text*/
+				
+			}
+			div{
+				padding-left: 57px;
+				display:  none; 
+			}
+			img{
+				display: block;
+			}
+			li:nth-child(n+2):hover div{
+				display: block;
+				position: relative;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>大家都喜欢的彩妆</li>
+			<li>1&emsp;Za姬芮新能真皙美白隔离霜 35g 
+				<div>
+					<img src="img/cosmetics/icon-1.jpg" />
+					￥62.00 最近69122人购买
+				</div>
+			</li>
+			<li>2&emsp;美宝莲精纯矿物奇妙新颜乳霜BB霜 30ml
+				<div>
+					<img src="img/cosmetics/icon-2.jpg" />
+					￥89.00 最近13610人购买
+				</div>
+			</li>
+			<li>3&emsp;菲奥娜水漾CC霜40g 
+				<div>
+					<img src="img/cosmetics/icon-3.jpg" />
+					￥59.90 最近13403人购买
+				</div>
+			</li>
+			<li>4&emsp;DHC 蝶翠诗橄榄卸妆油 200ml
+				<div>
+					<img src="img/cosmetics/icon-4.jpg" />
+					￥169.00 最近16757人购买
+				</div>
+			</li>
+		</ul>
+	</body>
+</html>
