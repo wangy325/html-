@@ -358,11 +358,13 @@ secondly,  quote the css file by using code below
 
 5.[qq注册页面](https://github.com/wangy325/html-note/blob/master/3-%E8%A1%A8%E5%8D%95/acount-apply.html)是利用div和css设计网页最好的例子，虽然运用的东西并不多，但网页结构明朗。	
 
-<h2 id="5">5 [CSS](https://www.w3.org/TR/CSS22/) (cascading style sheet)样式总结</h2>
+<h2 id="5">5 [CSS] (cascading style sheet)样式总结</h2>
 
-<h3 id="5.1>5.1 选择器</h3>
+关于css的详细文档，参阅[Cascading Style Sheets Level 2](https://www.w3.org/TR/CSS22/)，这不是最新的发布版本（2016年发布），但是内容可供学习。
 
-<h4 id="5.1.1">标签选择器</h4>
+<h3 id="5.1">5.1 选择器</h3>
+
+<h4 id="5.1.1">5.1.1 标签选择器</h4>
 
 ```css
 p{
@@ -372,7 +374,7 @@ p{
 }
 ```
 
-<h4 id="5.1.2">类(class)选择器</h4>
+<h4 id="5.1.2">5.1.2 类(class)选择器</h4>
 
 ```css
 .class{
@@ -380,7 +382,7 @@ p{
 }
 ```
 
-<h4 id="5.1.3">ID选择器</h4>
+<h4 id="5.1.3">5.1.3 ID选择器</h4>
 
 ```css
 #id{
