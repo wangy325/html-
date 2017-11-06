@@ -494,9 +494,9 @@ all in one:list-style:type position image;
 	
 * crosshair
 
-<h3 id="5.5">5.5 [伪类(Pseudo-classes)](https://www.w3.org/TR/CSS22/selector.html#pseudo-elements)</h3>
+<h3 id="5.5">5.5 伪类(Pseudo-classes)</h3>
 
-Add special effect to some selecters.
+[PSEUDO-CLASSES](https://www.w3.org/TR/CSS22/selector.html#pseudo-elements) is used to add special effect to some selecters.
 
 Syntax:selecter(Elemment):pseudo-class{property:value;}
 
