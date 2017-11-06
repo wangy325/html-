@@ -12,15 +12,36 @@
 			img{
 				vertical-align: top;
 			}
-			b{
+			div.logo p{
 				color: #7A6EAC;
 				font-size: 18px;
 				font-family: arial;
+				display: inline-block;
+				margin:0px;
 			}
-			span{
+			
+			/*以下实现文字倒影，但不能渐变*/
+			/*b:after { 
+					position:absolute; 
+					left:0px; 
+					top:25px; 
+					content:"深圳新一代信息技术研究院";
+					-moz-transform:scaleX(-1) rotate(180deg) transparent , transparent 50%; /*fireox支持*/
+					/*-webkit-transform:scaleX(-1) rotate(180deg);  
+					/*webkit内核浏览器支持*/
+					
+			/*} 
+			*/
+			
+			/*使用-webkit-box-reflet可以实现渐变效果，不支持火狐 只支持块元素标签*/
+			div.logo p{
+				-webkit-box-reflect: below 0 -webkit-linear-gradient(transparent, transparent 0%, rgba(255,255,255,.2));
+			}
+			
+			small{
 				padding-left:450px;
 			}
-			span a{
+			small a{
 				text-decoration: none;
 				color: black;
 			}
@@ -58,14 +79,14 @@
 			input{
 				border: none;
 				border-radius: 10px; /*圆角样式设置*/
-				padding-left: 15px; /*设置文本不覆盖左侧搜索图标*/
+				padding-left: 20px; /*设置文本不覆盖左侧搜索图标*/
 			}
 			input::-moz-placeholder{
 				font-family:"times new roman"; /*设置提示信息样式*/
 			}
 			
 			.seachbar{
-				background:#fff url(img/navibar/search-Logo.jpg) no-repeat left center; /*文本框中插入背景图片*/
+				background:#fff url(img/navibar/search-Logo.jpg) no-repeat 5px center; /*文本框中插入背景图片*/
 			}
 		</style>
 	</head>
@@ -73,11 +94,11 @@
 		<div id="navigation-bar">
 			<div class="logo">
 				<img src="img/navibar/forum-Logo.jpg" />
-				<b>深圳新一代信息技术研究院</b>
-				<span>
+				<p>深圳新一代信息技术研究院</p>
+				<small>
 					<a href="">网站地图</a>
 					<a href="">| 联系我们</a>
-				</span>
+				</small>
 			</div>
 			<div class="navi-colume">
 				<ul>
@@ -90,7 +111,7 @@
 					<li><a href="">创新联盟</a></li>
 					<li><a href="">新闻联播</a></li>
 					<li>
-						<input class="seachbar" type="text" name="searchbar" placeholder="Search..." size="20" />
+						<input class="seachbar" type="text" name="searchbar" placeholder="Search..." size="15" />
 					</li>
 				</ul>
 				
