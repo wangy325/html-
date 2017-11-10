@@ -1,0 +1,239 @@
+.navitop{
+				background-color: #F0F6F6;
+			}
+			.navitop-tx{
+				width:1100px;
+				height: 30px;
+				margin:0px auto;	
+			}
+			
+			/*左侧登录框样式*/
+			.navitop-tx-left{
+				width: 300px;
+				float: left;
+			}
+			span{
+				font-size: small;
+				font-family: "宋体";
+				color: gray;
+			}
+			.navitop-tx-left-login a, .navitop-tx-left-signup a{
+				text-decoration: none;
+				color: #FD245B;
+			}
+			.navitop-tx-left-login a:hover, .navitop-tx-left-signup a:hover{
+				color: #fff;
+				background-color: #FD245B;
+			}
+			/*右侧导航栏样式*/
+			.navitop-tx-right{
+				width: 800px;
+				float: right;	
+			}
+			ul.navitop-tx-right-bar{
+				list-style: none;
+				margin: 0px;
+				height: 22px;
+				padding-left: 60px;
+				/*clear:left;*/
+				float: right;
+			}
+			.navitop-tx-right-bar li{
+				float: left;
+				position: relative;	
+			}
+			.navitop-tx-right-bar li span a{
+				color: #808080;
+				text-decoration: none;
+				margin: 0px 20px;
+			}
+			li.navitop-tx-right-bar-apple span a{
+				color: #FD245B;
+			}
+			li.navitop-tx-right-bar-apple:hover span a{
+				color: #FFFFFF;
+				background-color: #FD245B;
+			}
+			li.navitop-tx-right-bar-banana:hover span a{
+				color: #FD245B;
+			}
+			li.navitop-tx-right-bar-car:hover span a{
+				color: #FD245B;
+			}
+			/*以下设置下拉框悬停显示*/
+			li.navitop-tx-right-bar-car:hover .navitop-tx-right-myv{
+				display: block; 
+			}
+			li.navitop-tx-right-bar-car:hover .navitop-tx-right-webnavi{
+				display: block; 
+			}
+			
+			/*以下是鼠标悬停显示的下拉菜单 */
+			div.navitop-tx-right-myv{
+				display: none;
+				position: absolute;
+				height: 150px;
+				background-color: #F0F6F6;
+			}
+			div.navitop-tx-right-myv ul{
+				list-style: none;	
+				width: 75px;
+				padding: 10px 0px 10px 16px;
+			}
+			div.navitop-tx-right-myv ul li a{ 
+				font-size: small;
+				font-family: "宋体";
+				text-decoration: none;
+				line-height: 20px;
+				color: #808080;
+			}
+			div.navitop-tx-right-myv ul li a:hover{ 
+				color:#FD245B
+			}
+			/*下拉菜单·我的v+·结束*/
+			
+			/*下拉菜单·网站导航·开始*/
+			div.navitop-tx-right-webnavi{
+				position:absolute;
+				display:none;
+				width:190px;
+				background-color: #F0F6F6;
+			}
+			div.navitop-tx-right-webnavi div ul{
+				list-style: none;
+				padding-left: 0px;
+				display: block;
+			}
+			.navitop-tx-right-webnavi-sub div p{/*设置一级导航*/
+				margin-top: 10px;
+				font-family: "宋体";
+				font-size: small;
+				font-weight: bold;
+				margin-bottom: 0px;
+				color: #FD245B;
+				padding-left: 10px;
+			}
+			.navitop-tx-right-webnavi-sub div ul>li a{
+				padding:0px 15px;
+				font-family: "宋体";
+				font-size: small;
+				text-decoration: none;
+				color: #808080;
+			}
+			.navitop-tx-right-webnavi-sub div ul>li a:hover{
+				color: #FD245B;
+			}
+		/*下拉菜单·网站导航·结束*/
+		/* 顶层导航栏结束*/
+			div.navisec{
+				width:1100px;
+				margin:0px auto;
+			}
+			
+			form{
+				display: inline-block;
+				height: 50px;
+				padding-top: 40px;
+				float: right;
+			}
+			input.navisec-sc{
+				height: 25px;
+				width: 300px;
+				vertical-align: middle;
+				border: 3.5px solid #E3E3E3;
+				padding: 0px 0px;	
+			}
+			input.navisec-sc::-moz-placeholder{
+				font:gray italic "宋体";
+			}
+			input.navisec-sc::-webkit-input-placeholder{
+				font:gray oblique "宋体";
+			}
+			input.navisec-sb{
+				vertical-align: middle;
+				margin-left: -5px;
+				/*position:absolute;
+				top: 88px;*/
+			}
+			/*第二层导航结束，第三层导航开始*/
+			div.navitrd{
+				width:1100px;
+				margin:0px auto;
+			}
+			div.navitrd ul{
+				list-style: none;
+				height:38px;
+				clear: left;
+				background-color: #80A2AE;
+				margin:15px auto;
+				padding: 0px 0px;
+				border: 3px solid #80A2AE ;
+				border-radius: 5px;
+			}
+			.navitrd ul li{
+				float: left;	
+			}
+			.navitrd ul li h3{
+				margin: 5px auto;
+				padding: 0px 25px;
+			}
+			h3 a{
+				font-family: "宋体";
+				text-decoration: none;
+				color: #FFFFFF;
+			}
+			.navitrd ul li form{
+				padding: 0px 0px ;
+				height: 36px;
+			}
+			.navitrd li:nth-child(n+10){
+				float: right;
+			}
+			.navitrd ul li:hover{
+				background-color: #48626C;	
+			}
+			/*以上结束总导航栏，开始商品导航  第四层*/
+			.navifth{
+				width: 1100px;
+				height: 75px;
+				margin: 0px auto;
+				background-color: #E3E3E3;
+				border-radius: 5px;
+			}
+			.navifth-gc{
+				padding-top:15px;
+			}
+			.navifth ul{
+				list-style: none;
+				height: 30px;
+				margin: 0px;
+				padding: 0px 30px;
+			}
+			.navifth ul>li{
+				float: left;
+				padding: 0px 7px 0px;
+				font-size: small;
+				font-family: "宋体";
+			}
+			.navifth ul>li a{
+				text-decoration: none;
+				color: #808080;
+			}
+			.navifth ul>li a:hover{
+				color: #FD245B;
+			}
+			.navifth ul>li span{
+				color: #A51D33;
+			}
+			.navifth-kw{
+				float: left;
+			}
+			.navifth-hb{
+				float: right;
+				padding-right: 18px;
+			}
+			/*第四层导航结束*/
+			.navibot{
+				width:1100px;
+				margin:10px auto;
+			}

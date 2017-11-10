@@ -1,0 +1,74 @@
+			span{
+				font-size: small;
+				font-family: "宋体";
+				color: gray;
+			}
+			.copy-hdesk{
+				width: 1100px;
+				overflow: hidden;
+				margin: 10px auto;
+				background-color: #E8E8EA;
+			}
+			.copy-hdesk div{
+				float: left;
+			}
+			.copy-hdesk ul{
+				list-style: none;
+				padding: 0px;
+			}
+			.copy-hdesk ul li{
+				padding:  5px 62px;
+				color: #E3E3E3;
+				font-size: small;
+				font-family: "宋体";
+			}
+			.copy-hdesk ul li span{
+				color: #A51D33;
+			}
+			.copy-hdesk ul li a{
+				color: #808080;
+				text-decoration: none;
+			}
+			.copy-hdesk ul li a:hover{
+				color: #FD245B;
+			}
+			.copy-hdesk-vl {
+				padding-top:24px ;
+			}
+			.copy-aknow{
+				width:1100px;
+				overflow: hidden;
+				margin:5px auto; 
+			}
+			.copy-aknow-ln{
+				overflow: hidden;
+				margin: 10px auto;
+				
+			}
+			.copy-aknow-ln ul{
+				list-style: none;
+				overflow: hidden;
+				margin:0px auto;
+				padding-left: 310px;
+			}
+			.copy-aknow-ln ul li{
+				float: left;
+				padding: 0px 10px;
+				font-size: small;
+				font-family: "宋体";
+			}
+			.copy-aknow-ln ul li a{
+				text-decoration: none;
+				color: #808080;
+			}
+			.copy-aknow-ln ul li a:hover{
+				color: #FD245B;
+			}
+			.copy-aknow-cp span{
+				font-family: arial;
+				padding-left: 270px;
+			}
+			.copy-aknow-lg{
+				margin-top: 10px;
+				margin-left: 435px;
+			}

@@ -1,0 +1,111 @@
+.ngoods{
+	width: 1100px;
+	overflow: hidden;
+	margin: 0px auto;
+}
+
+.ngoods-re{
+	width: 50%;
+	/*height: 40px;*/
+	overflow: hidden;
+	margin: 0px auto;
+	/*vertical-align:bottom;*/
+}
+.ngoods-re div{
+	display: inline-block;
+	
+}
+
+.ngoods-re div form{
+	height: 25px;
+	padding: 0px ;
+}
+
+.ngoods-re div form input{
+	font-family: "宋体";
+	font-size: 100%;
+	height: 30px;
+	font-weight: bold;
+	border: 1px solid #D3D3D3;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.ngoods-restar form input{
+	background:url(../img/collect.jpg) no-repeat 10px center;
+	width: 120px;
+	background-color: #F3F4F6;
+	padding-left: 40px;
+}
+.ngoods-refresh form input{
+	background-color: #D0E7ED;
+	color: #0B8FD0;
+}
+/*.ngoods-redown{
+	height: 22px;
+}*/
+.ngoods-restar-txt a{
+	text-decoration: none;
+}
+.ngoods-restar-txt span:hover{
+	color: #FD245B;
+}
+.ngoods-sel{
+	border-bottom: 1px solid #A51D33;
+}
+.ngoods-sel ul{
+	overflow: hidden;
+	margin: 20px auto 0px;
+	padding: 0px;
+	list-style: none;
+}
+.ngoods-sel ul>li:nth-child(2n-1),.ngoods-sel ul>li:nth-child(2){
+	overflow: hidden;
+	float: left;
+	margin-left: 10px;
+	padding: 10px 30px;
+	background-color: #E3E3E3;
+	border-radius: 5px;
+}
+.ngoods-sel ul>li:first-child{
+	background:url(../img/img01.png) no-repeat center;
+}
+.ngoods-sel ul>li:first-child a{
+	color: #FFFFFF;
+}
+.ngoods-sel ul>li a{
+	font-size: small;
+	font-family: "宋体";
+	text-decoration: none;
+	color: #7E7E7E;
+}
+.ngoods-sel ul>li form{
+	padding: 0px;
+	height: 22px;
+}
+
+/*以下是多选框样式*/
+#checkbox {
+	overflow: hidden;
+}
+#checkbox span{
+	font-weight: bold;
+}
+#checkbox form{
+	padding: 0px;
+	float: none;
+	height: auto;
+}
+#checkbox form input[type=checkbox]{
+	display: inline-block;
+	margin:0px auto;
+	/*border: 1px solid #E1E1E1;
+	border-radius:10px;
+	background-color: #E1E1E1; */
+	
+}
+#checkbox form label{
+	font-family: "宋体";
+	font-size: small;
+	color: #7E7E7E;
+}

@@ -1,0 +1,186 @@
+
+.index-body{
+	
+}
+
+.index-banner{
+	width:1100px;
+	overflow: hidden;
+	margin:0px auto;
+}
+.index-banner-dy,.index-banner-ad{
+	float: right;
+}
+.index-banner-dy ul{
+	padding: 0px 0px;
+	width:248px;
+	margin:0px;
+	list-style: none;
+	border:1px  solid #E1E1E1;
+}
+.index-banner-dy ul>li{
+	margin:10px 0px;
+}
+.index-banner ul li a {
+	font-size:small;
+	font-family: "宋体";
+	color: #808080;
+	text-decoration: none;
+}
+.index-banner ul li a:hover {
+	color: #A51D33;
+}
+.index-banner-dy ul h3{
+	font-family: "宋体";
+	color: #808080;
+	margin:0px;
+	line-height: 30px;
+	background-color: #F0F6F6;
+}
+.index-banner-ad{
+	margin-top:12px;
+}
+
+/*以下是热门分类css样式*/
+.index-goodscate{
+	width: 1100px;
+	margin: 0px auto; 
+	overflow: hidden;
+}
+.index-goodscate-ct{
+	width: 870px;
+	height: 360px;
+	float: left;
+	border:1px solid #E1E1E1;
+}
+.index-goodscate-ht h2{
+	color: #FD245B;
+	padding-left:40px ;
+	margin: 0px auto;
+	line-height:50px ;
+	background-color: #F0F6F6;
+	border-bottom: 3px solid #FD245B; 
+}
+.index-goodscate-hc{
+	overflow: hidden;
+}
+.index-goodscate-hc div:nth-child(2n){
+	background-color: #F1F6F9;
+}
+.index-goodscate-hc ul{
+	list-style: none;
+	margin: 0px auto;
+}
+.index-goodscate-hc li{
+	float: left;
+	font-size: small;
+	font-family: "宋体";
+	line-height: 31px;
+}
+.index-goodscate-hc ul li a{
+	text-decoration: none;
+	color: #808080;
+	padding: 0px 12px;
+}
+.index-goodscate-hc ul li b{
+	padding-right: 20px;
+}
+.index-goodscate-hc div:last-child ul {
+	padding-left: 23px;
+}
+.index-goodscate-hc div:last-child ul b{
+	padding-right: 8px;
+}
+.index-goodscate-hc ul li a:hover{
+	color: #FD245B;
+}
+.index-goodscate-ad{
+	float: right;
+}
+/*以下为女装楼层样式*/
+.index-lady{
+	width:1100px;
+	height: 380px;
+	margin:10px auto;
+}
+.index-lady-tt{
+	overflow: hidden;
+}
+.index-lady-tt-logo{
+	float: left;
+}
+.index-lady-tt-id{
+	width: 120px;
+	height: 48px;
+	float: left;
+}
+h1{
+	margin: 0px auto;
+	font-weight:lighter;
+	font-family: arial;
+	color: #7E7E7E;
+	line-height: 48px;
+}
+.index-lady-tt-txt{
+	width:930px ;
+	border-bottom: 5px solid #FD245B;
+	float: right;
+	/*height: 48px;*/
+}
+.index-lady-tt-txtid{
+	float: left;
+}
+.index-lady-tt-txtid h1{
+	color: #FFEDF1;
+	font-size: 250%;
+	line-height: 43px;
+}
+
+.index-lady-tt-txtco {
+	float: right;
+}
+.index-lady-tt-txtco span a{
+	text-decoration: none;
+	color:#7E7E7E;
+	line-height: 43px;
+	font-family: arial, "宋体";
+}
+.index-lady-tt-txtco span a:hover{
+	color: #FD245B;
+}
+.index-lady-cowrapper{
+	margin: 10px auto;
+	overflow: hidden;
+}
+.index-lady-cowrapper-li{
+	float: right;
+	/*margin-left: 15px;*/
+}
+.index-lady-cowrapper-li ul{
+	list-style: none;
+	padding: 0px;
+	margin:0px auto;
+}
+.index-lady-cowrapper-li li:nth-child(1){
+	border: 1px solid #E1E1E1;
+}
+.index-lady-cowrapper-li li:nth-child(2){
+	border-bottom: 1px solid #E1E1E1;
+	border-left: 1px solid #E1E1E1;	
+	border-right: 1px solid #E1E1E1;
+}
+
+.index-lady-cowrapper-li li a{
+	font-size: small;
+	font-family: "宋体";
+	color: #7E7E7E;
+	text-decoration: none;
+	line-height: 35px;
+	padding-left: 20px;
+}
+.index-lady-cowrapper-li li span{
+	color: #FD245B;
+}
+.index-lady-cowrapper-li li a:hover{
+	text-decoration: underline;
+}
