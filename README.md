@@ -112,7 +112,7 @@
 <h4 id="2.4.2">2.4.2 外部链接</h4>
 
 ```html
-<a> href = "path" target = "_self(_blank)"</a>
+<a href = "path" target = "_self(_blank)">链接文字</a>
 ``` 
 
 <h4 id="2.4.3">2.4.3 图片引用</h4>
@@ -147,7 +147,7 @@
 
 ```css
 ul{
-list-style:none; /*取消列表前面的排序*/
+	list-style:none; /*取消列表前面的排序*/
 	margin:0px;
 	padding-left:0px auto; /*外间距和内边距设置，控制ul的强制缩进（不让其缩进）*/
 }
@@ -222,7 +222,7 @@ table {
 .a{
 	background-color:beige; /* 设定分组a的背景颜色*/
         
-	/*text-align: left; 设定分组的对齐方式*/	
+	text-align: left; /*设定分组的对齐方式*/	
 }
 			
 .b{
@@ -285,18 +285,18 @@ secondly,  quote the css file by using code below
 <h3 id="4.1">4.1表单基本表现</h3>
 
 ```html
-	<form method="post/get" action=""> /* "action"表示向何处发送数据*/
+<form method="post/get" action=""> /* "action"表示向何处发送数据*/
 	
-		<input type="" ...>
+	<input type="" ...>
 	
-		<select name="">  /*下拉列表框至少有一个option*/
+	<select name="">  /*下拉列表框至少有一个option*/
 	
-			<option value="" selected="selected">下拉选项（选中）</option>
+		<option value="" selected="selected">下拉选项（选中）</option>
 	
-			...
+		...
 	
-		</selected>
-	</form>
+	</selected>
+</form>
 
 ```
 <h3 id="4.2">4.2 表单的type属性</h3>
@@ -307,19 +307,19 @@ secondly,  quote the css file by using code below
 >
 >checkbox 指定为多选框
 >
->radio 指定为单选框 /*单选框属于一个类别，其name属性必须相同*/
+>radio 指定为单选框 	/*单选框属于一个类别，其name属性必须相同*/
 >
->submit 提交按钮 /*文本框和按钮在同一个form里面，按钮功能生效*/
+>submit 提交按钮 	/*文本框和按钮在同一个form里面，按钮功能生效*/
 >
 >reset 重置按钮
 >
 >image 图片按钮
 >
->button 普通按钮 /*实现功能需要指定oneclick事件*/
+>button 普通按钮 	/*实现功能需要指定oneclick事件*/
 >
 >file 文件域，用于选择上传文件
 >
->hidden 隐藏框 /*具体意义？*/
+>hidden 隐藏框 	/*具体意义？*/
 >
 >...
 
@@ -339,14 +339,18 @@ secondly,  quote the css file by using code below
 </fieldset>
 
 <lable for="id">提示文本</label>
-	<input type="text" name="gen" value="" id="id" > /*如果在 label 元素内点击文本，就会触发此控件。*/
+<input type="text" name="gen" value="" id="id" > /*如果在 label 元素内点击文本，就会触发此控件。*/
+
+/*</lable>标记也可以在`input`标签后面*/
+
+/*也可把`label`标签写在`input`标签后面，这样，文字就在控件后面（前者是文字在前，控件(选框)在后。）*/
  ```
  
->贴士：利用fieldset制作带标题的边框的时候，可以设置margin-style来设置表单名的缩进
+>贴士：利用fieldset制作带标题的边框的时候，可以设置`margin-style`来设置表单名(文字)的缩进
 
 <h3 id="4.5">4.5 关于列表，表单，div css的综合应用几点总结</h3>
 
-1.[网易邮箱登录页面](https://github.com/wangy325/html-note/blob/master/3-%E8%A1%A8%E5%8D%95/netease.html)
+1.[网易邮箱登录页面](#html-note/3-表单/netease.html)
 是对div设计网页的一次大胆探索。网页设计的过程中对css样式的引用**杂乱不堪**，既有行内引用，也有基于`.css`样式的外部引用。刚开始，对css还不是很熟练。
 		
 2.[阿里巴巴注册页面](https://github.com/wangy325/html-note/blob/master/3-%E8%A1%A8%E5%8D%95/alibaba.html)
