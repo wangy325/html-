@@ -350,7 +350,7 @@ secondly,  quote the css file by using code below
 
 <h3 id="4.5">4.5 关于列表，表单，div css的综合应用几点总结</h3>
 
-1.[网易邮箱登录页面](#html-note/3-表单/netease.html)
+1.[网易邮箱登录页面](/3-表单/netease.html)
 是对div设计网页的一次大胆探索。网页设计的过程中对css样式的引用**杂乱不堪**，既有行内引用，也有基于`.css`样式的外部引用。刚开始，对css还不是很熟练。
 		
 2.[阿里巴巴注册页面](https://github.com/wangy325/html-note/blob/master/3-%E8%A1%A8%E5%8D%95/alibaba.html)
