@@ -353,18 +353,18 @@ secondly,  quote the css file by using code below
 1.[网易邮箱登录页面](/3-表单/netease.html)
 是对div设计网页的一次大胆探索。网页设计的过程中对css样式的引用**杂乱不堪**，既有行内引用，也有基于`.css`样式的外部引用。刚开始，对css还不是很熟练。
 		
-2.[阿里巴巴注册页面](https://github.com/wangy325/html-note/blob/master/3-%E8%A1%A8%E5%8D%95/alibaba.html)
+2.[阿里巴巴注册页面](/3-表单/alibaba.html)
 是利用div和table设计网页的代表，这里利用table较为合理地规避了提示信息和表单的对齐问题。这里特别要补充的一点是：`网页的页头部分，可以用一个div实现的`，需要做好的就是理解好[盒子模型](https://www.w3.org/TR/CSS22/box.html)的内涵，本次设计中，利用了嵌套的div和表格的方式实现，略显繁琐。
 
-3.[人人注册页面](https://github.com/wangy325/html-note/blob/master/3-%E8%A1%A8%E5%8D%95/renren.html)已经是一个利用div实现网页设计很完美的例子了，前面说的网页head部分，也用一个div搞定了。唯一不足之处在于，右边**热门主页**和**游戏**这两个板块，中间还是用了table实现。这里用table实现确实很容易理解，其实用div也是完全可以实现的，把照片和名字用一个div套起来，就可以了。此外还有一种用无序列表(ul)实现的方式，具体的代码可参见[图片+文本](https://github.com/wangy325/html-note/blob/master/3-%E8%A1%A8%E5%8D%95/%E5%A4%B4%E5%83%8F%2B%E6%96%87%E5%AD%97.html)
+3.[人人注册页面](/3-表单/renren.html)已经是一个利用`div`实现网页设计很完美的例子了，前面说的网页head部分，也用一个`div`搞定了。唯一不足之处在于，右边**热门主页**和**游戏**这两个板块，中间还是用了`table`实现。这里用`table`实现确实很容易理解，其实用`div`也是完全可以实现的，把照片和名字用一个`div`套起来，就可以了。此外还有一种用无序列表(ul)实现的方式，具体的代码可参见[图文排版](/3-表单/头像+文字.html)
 
-4.[新浪资料修改](https://github.com/wangy325/html-note/blob/master/3-%E8%A1%A8%E5%8D%95/sina.html)这个网页虽然没用到table 但是div用的很乱。但是将文本和表单分开为两个div某种意义上提升了编辑效率。	
+4.[新浪资料修改](/3-表单/sina.html)这个网页虽然没用到`table` 但是`div`用的很乱。但是将文本和表单分开为两个`div`某种意义上提升了编辑效率。	
 
-5.[qq注册页面](https://github.com/wangy325/html-note/blob/master/3-%E8%A1%A8%E5%8D%95/acount-apply.html)是利用div和css设计网页最好的例子，虽然运用的东西并不多，但网页结构明朗。	
+5.[qq注册页面](/3-表单/acount-apply.html)是利用`div`和`css`设计网页最好的例子，虽然运用的东西并不多，但网页结构明朗。	
 
 <h2 id="5">5 CSS(cascading style sheet)样式总结</h2>
 
-关于css的详细文档，参阅[Cascading Style Sheets Level 2](https://www.w3.org/TR/CSS22/)，这不是最新的发布版本（2016年发布），但是内容可供学习。
+关于css的详细文档，参阅[Cascading Style Sheets Level 2](https://www.w3.org/TR/CSS22/)，这不是最新的发布版本（2016年发布）。
 
 <h3 id="5.1">5.1 选择器</h3>
 
@@ -394,7 +394,7 @@ p{
 	}
 ```
 
-**ID选择器在同一个页面中只能用一次**
+**ID选择器在同一个页面中只能用一次**,这句话要加深理解
 
 <h3 id="5.2">5.2 样式优先级</h3>
 
@@ -434,7 +434,7 @@ font-style:italic(oblique, normal);
 
 font-weight:bold(er) light(er) normal;
 
-all in one: font:style weight size family;
+[all in one] font:style weight size family;
 
 ```
 <h4 id="5.4.2">5.4.2 文本样式</h4>
@@ -468,7 +468,7 @@ background-repeat:repeat/no-repeat/repeat-x(y)；
 
 background-position:x% y% / left/center/right top/middle/right;
 
-all in one:background:color image position repeat;
+[all in one] background:color image position repeat;
 
 ```
 <h4 id="5.4.4">5.4.4 列表样式</h4>
@@ -480,7 +480,7 @@ list-style-image:url();
 
 list-style-position:inside/outside;
 
-all in one:list-style:type position image;
+[all in one] list-style:type position image;
 
 ```
 
@@ -502,7 +502,7 @@ all in one:list-style:type position image;
 
 [PSEUDO-CLASSES](https://www.w3.org/TR/CSS22/selector.html#pseudo-elements) is used to add special effect to some selecters.
 
-Syntax:selecter(Elemment):pseudo-class{property:value;}
+>Syntax:selecter(Elemment):pseudo-class{property:value;}
 
 <h4 id="5.5.1">超链接伪类（锚伪类）</h4>
 
@@ -520,9 +520,9 @@ Syntax:selecter(Elemment):pseudo-class{property:value;}
 >
 >	`<a class="red" href="css_syntax.asp">CSS Syntax</a>`
 >
->关于hover制作画框的用法，参见[css-gallary.html](https://github.com/wangy325/html-note/blob/master/%E4%BC%AA%E7%B1%BB%EF%BC%88pseudo-classes%EF%BC%89/css-gallery.html)
+>关于hover制作画框的用法，参见[css-gallary.html](/5-伪类（pesudo-classes）/css-gallary.html)
 >
->说明的是要注意`position`属性值`relative`和`absolute`之间的差异，以及，`relative`属性值生效的前提是，block区块的的``height`值不能设置
+>说明的是要注意`position`属性值`relative`和`absolute`之间的差异
 
 <h4 id="5.5.2">伪元素（pseudo-elements）</h4>
 
@@ -582,7 +582,7 @@ p:last-child{fontsize:0.75em;} /*指定最后一个p段落子元素的字号为0
 			
 >关于`:lsat-child`和`:last-of-type`的区别，参见[*it targets a particular type of element in a particular arrangement*](https://css-tricks.com/almanac/selectors/l/last-of-type/)
 >
->上述代码块，若样式改为`p:last-of-type{fontsize:0.75em}`，且<span>行存在，也能找到<p>段落
+>上述代码块，若样式改为`p:last-of-type{fontsize:0.75em}`，且即使`<span>`行存在，也能找到<p>段落
 	
 * [:only-child](https://developer.mozilla.org/en-US/docs/Web/CSS/:only-child)
 	
@@ -592,17 +592,17 @@ p:last-child{fontsize:0.75em;} /*指定最后一个p段落子元素的字号为0
 	
 >matches one or more elements based on their position among a group of siblings.
 >
->更多多信息参考伪类文件夹中[nth-child.html](https://github.com/wangy325/html-note/blob/master/%E4%BC%AA%E7%B1%BB%EF%BC%88pseudo-classes%EF%BC%89/nth-child.html)
+>更多多信息参考伪类文件夹中[nth-child.html](/5-伪类（pesudo-classes）/nth-child.html)
 
 * [:first-letter(css2)/::first-letter(css3)](https://developer.mozilla.org/en-US/docs/Web/CSS/::first-letter)
 
     >applies styles to the first letter of the first line of a block-level element, but only when not preceded by other content (such as images or inline tables).
     >
-    >[百度音乐标签](https://github.com/wangy325/html-note/blob/master/4-%E7%9B%92%E5%AD%90%E5%92%8CCSS/musictags.html#L22)用到了此伪类。
+    >[百度音乐标签](/4-盒子和CSS/musictags.html)用到了此伪类。
 	
 * :first-line
 	
-* :after
+* [:after](https://www.w3.org/TR/CSS22/selector.html#before-and-after)
 	
 * :before
 	
