@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>侧边栏下拉菜单</title>
+		<style type="text/css">
+			body{
+				margin: 0px auto;
+				font-family: "times new roman","宋体";
+				font-size: normal;
+				color: #7E7E7E;
+				background-color: lightgoldenrodyellow;
+			}
+			#dropdown{
+				width: 240px;
+				margin: 0px auto;
+				position: relative;
+				background-color: #fff;
+				border-top: 1px solid lightgray;
+				border-bottom: 1px solid lightgray;
+			}
+			input[type='radio']{
+				position: absolute;
+				opacity: 0;
+			}
+			label{
+				display: block;
+				position: relative;
+				width: 200px;
+				margin:2px auto;
+				line-height: 40px;
+				padding: 0px 20px;
+				font-size: 120%;
+				font-weight: bold;
+				background-color: whitesmoke;
+				cursor: pointer;
+				border-top: 1px solid lightgray;
+			}
+			label[for='carte1']{
+				border: none;
+			}
+			label span{
+				transition: .5s;
+			}
+			label:after{
+				content: '+';
+				position: absolute;
+				right: 20px;
+				/*transform: rotate(45deg);*/
+				transition: .5s;
+			}
+			#carte1:checked ~ label[for$='1']:after,
+			#carte2:checked ~ label[for='carte2']:after,
+			#carte3:checked ~ label[for='carte3']:after,
+			#carte4:checked ~ label[for='carte4']:after,
+			#carte5:checked ~ label[for='carte5']:after{
+				transform: rotate(135deg);
+				transition: .5s transform;
+			}
+			#carte1:checked ~ label[for='carte1'] span,
+			#carte2:checked ~ label[for='carte2'] span,
+			#carte3:checked ~ label[for='carte3'] span,
+			#carte4:checked ~ label[for='carte4'] span,
+			#carte5:checked ~ label[for='carte5'] span{
+				/*height: 240px;*/
+				opacity:0;
+			}
+			#carte1:checked ~ #content1,
+			#carte2:checked ~ #content2,
+			#carte3:checked ~ #content3,
+			#carte4:checked ~ #content4,
+			#carte5:checked ~ #content5{
+				height: 260px;
+				visibility: visible;
+			}
+			#carte1:checked ~ #content1 *,
+			#carte2:checked ~ #content2 *,
+			#carte3:checked ~ #content3 *,
+			#carte4:checked ~ #content4 *,
+			#carte5:checked ~ #content5 *{
+				/*height: 240px;*/
+				visibility: visible;
+			}
+			
+			span{
+				color: #B4B5AF;
+				font-weight: normal ;
+			}
+			section{
+				position: relative;
+				height: 0px;
+				overflow: hidden;
+				visibility: hidden;
+				transition: all .5s;
+			}
+			ul{
+				position: relative;
+				padding: 0px; 
+				margin:8px auto;
+				visibility: hidden;
+			}
+			ul li{list-style-type: none; line-height: 30px; padding: 0px 40px;}
+			ul li:hover{background-color: whitesmoke;}
+			ul li a{text-decoration: none;color: #7E7E7E;}
+			ul li:hover a,ul li:hover a span{color: #FD245B;}
+			
+			
+		</style>
+	</head>
+	<body>
+		<div id="dropdown">
+			<input id="carte1" type="radio" name="carte" />
+			<label for="carte1">布艺家纺&emsp;<span>(10584)</span></label>
+			<section id="content1">
+				<ul>
+					<li><a href="">床品套件<span>（617）</span></a></li>
+					<li><a href="">被子<span>（5723）</span></a></li>
+					<li><a href="">毛毯/绒毯<span>（584）</span></a></li>
+					<li><a href="">枕头/保健枕<span>（836）</span></a></li>
+					<li><a href="">毛巾/浴巾<span>（8725）</span></a></li>
+					<li><a href="">凉席<span>（591）</span></a></li>
+					<li><a href="">地垫/毛毯<span>（8621）</span></a></li>
+					<li><a href="">蚊帐<span>（265）</span></a></li>
+				</ul>
+			</section>
+			
+			<input id="carte2" type="radio" name="carte" />
+			<label for="carte2">宠物用品&emsp;<span>(584)</span></label>
+			<section id="content2">
+				<ul>
+					<li><a href="">床品套件<span>（617）</span></a></li>
+					<li><a href="">被子<span>（5723）</span></a></li>
+					<li><a href="">毛毯/绒毯<span>（584）</span></a></li>
+					<li><a href="">枕头/保健枕<span>（836）</span></a></li>
+					<li><a href="">毛巾/浴巾<span>（8725）</span></a></li>
+					<li><a href="">凉席<span>（591）</span></a></li>
+					<li><a href="">地垫/毛毯<span>（8621）</span></a></li>
+					<li><a href="">蚊帐<span>（265）</span></a></li>
+				</ul>
+			</section>
+			
+			<input id="carte3" type="radio" name="carte" />
+			<label for="carte3">居家日用&emsp;<span>(7524)</span></label>
+			<section id="content3">
+				<ul>
+					<li><a href="">床品套件<span>（617）</span></a></li>
+					<li><a href="">被子<span>（5723）</span></a></li>
+					<li><a href="">毛毯/绒毯<span>（584）</span></a></li>
+					<li><a href="">枕头/保健枕<span>（836）</span></a></li>
+					<li><a href="">毛巾/浴巾<span>（8725）</span></a></li>
+					<li><a href="">凉席<span>（591）</span></a></li>
+					<li><a href="">地垫/毛毯<span>（8621）</span></a></li>
+					<li><a href="">蚊帐<span>（265）</span></a></li>
+				</ul>
+			</section>
+			
+			<input id="carte4" type="radio" name="carte" />
+			<label for="carte4">厨房餐具&emsp;<span>(9571)</span></label>
+			<section id="content4">
+				<ul>
+					<li><a href="">床品套件<span>（617）</span></a></li>
+					<li><a href="">被子<span>（5723）</span></a></li>
+					<li><a href="">毛毯/绒毯<span>（584）</span></a></li>
+					<li><a href="">枕头/保健枕<span>（836）</span></a></li>
+					<li><a href="">毛巾/浴巾<span>（8725）</span></a></li>
+					<li><a href="">凉席<span>（591）</span></a></li>
+					<li><a href="">地垫/毛毯<span>（8621）</span></a></li>
+					<li><a href="">蚊帐<span>（265）</span></a></li>
+				</ul>
+			</section>
+			
+			<input id="carte5" type="radio" name="carte" />
+			<label for="carte5">汽车用品&emsp;<span>(5544)</span></label>
+			<section id="content5">
+				<ul>
+					<li><a href="">床品套件<span>（617）</span></a></li>
+					<li><a href="">被子<span>（5723）</span></a></li>
+					<li><a href="">毛毯/绒毯<span>（584）</span></a></li>
+					<li><a href="">枕头/保健枕<span>（836）</span></a></li>
+					<li><a href="">毛巾/浴巾<span>（8725）</span></a></li>
+					<li><a href="">凉席<span>（591）</span></a></li>
+					<li><a href="">地垫/毛毯<span>（8621）</span></a></li>
+					<li><a href="">蚊帐<span>（265）</span></a></li>
+				</ul>
+			</section>
+		</div>
+	</body>
+</html>

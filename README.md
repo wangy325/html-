@@ -520,7 +520,7 @@ list-style-position:inside/outside;
 >
 >	`<a class="red" href="css_syntax.asp">CSS Syntax</a>`
 >
->关于hover制作画框的用法，参见[css-gallary.html](/5-伪类（pesudo-classes）/css-gallary.html)
+>关于hover制作画框的用法，参见[css-gallary.html](/5-伪类（pseudo-classes）/css-gallary.html)
 >
 >说明的是要注意`position`属性值`relative`和`absolute`之间的差异
 
@@ -582,7 +582,7 @@ p:last-child{fontsize:0.75em;} /*指定最后一个p段落子元素的字号为0
 			
 >关于`:lsat-child`和`:last-of-type`的区别，参见[*it targets a particular type of element in a particular arrangement*](https://css-tricks.com/almanac/selectors/l/last-of-type/)
 >
->上述代码块，若样式改为`p:last-of-type{fontsize:0.75em}`，且即使`<span>`行存在，也能找到<p>段落
+>上述代码块，若样式改为`p:last-of-type{fontsize:0.75em}`，且即使`<span>`行存在，也能找到`<p>`段落
 	
 * [:only-child](https://developer.mozilla.org/en-US/docs/Web/CSS/:only-child)
 	
@@ -592,7 +592,7 @@ p:last-child{fontsize:0.75em;} /*指定最后一个p段落子元素的字号为0
 	
 >matches one or more elements based on their position among a group of siblings.
 >
->更多多信息参考伪类文件夹中[nth-child.html](/5-伪类（pesudo-classes）/nth-child.html)
+>更多多信息参考伪类文件夹中[nth-child.html](/5-伪类（pseudo-classes）/nth-child.html)
 
 * [:first-letter(css2)/::first-letter(css3)](https://developer.mozilla.org/en-US/docs/Web/CSS/::first-letter)
 

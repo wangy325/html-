@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>下拉菜单动画</title>
+		<style type="text/css">
+			#select{  
+			    margin: 10px auto 180px auto;  
+			    width: 200px;  
+			    height: 50px;  
+			    background-color: #eee;   
+			    border-radius: 5px;  
+			    line-height: 50px;  
+			    text-align: center;  
+			    cursor: pointer;  
+			}
+			ul{
+				padding: 0px;
+			}  
+			ul li{  
+			    visibility: hidden;  
+			    opacity:0;
+			    width: 180px;  
+			    height: 0px;  
+			    list-style-type: none;  
+			    text-align: center;  
+			    background-color: #eee;  
+			    line-height: 00px;  
+			    margin: 0 auto;  
+			}  
+			#select:hover ul li{  
+			    visibility: visible;   
+			    opacity: 1;  
+			    height:50px;  
+			    line-height:50px;  
+			    transition: all 1s;  
+			} 
+		</style>
+	</head>
+	<body>
+		
+		    <div id="select">  
+   			 	<span style="white-space:pre">    </span>下拉菜单效果  
+        	<ul>  
+            	<li>option one</li>  
+            	<li><a href="http://www.baidu.com">option two</a></li>  
+           	 	<li>option three</li>  
+      		  </ul>  
+    	</div>  
+	</body>
+</html>
+
+

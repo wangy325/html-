@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>搜索框</title>
+		<!--输入时，边框高亮-->
+<style type="text/css">
+			#searchbar,.wrap{
+				margin: 0px auto;
+				position: relative;
+				width: 500px;
+				height: 40px;	
+			}
+		
+			input[type="text"]{
+				width: 320px;
+				height: 16px;
+				position: absolute;
+				margin-left: 5px;
+				padding: 12px 170px 12px 5px ;
+				border: 1px solid lightgray;	
+				outline:none;
+			}
+			input[type='text']:focus{
+				border-color: blue;
+			}
+			
+			input[type='file']{
+				position: absolute;
+				left: -10000px;
+				opacity: 0;
+			}
+			label[for*='c']{
+				position: absolute;
+				right: 85px;
+				top: 10px;
+				width:30px;
+				height: 22px;
+				cursor: pointer;
+				background:url(img/photo1.png) center center no-repeat;
+			}
+			label[for*='c']:hover{
+				background: url(img/photo.png) center center no-repeat;
+			}
+			input[type='submit']{
+				position: absolute;
+				top: 0px;
+				right: -2px;
+				height: 42px;
+				width: 80px;
+				border: 1px solid lightgray;
+				line-height: 41px;
+				text-align: center;
+				padding: 0px;/*清除点击抖动*/
+				background:deepskyblue;
+				font-size: 100%;
+				font-family: arial;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="searchbar">
+			<form action="" method="post">
+				<input type="text" name="输入搜索关键词" value=""  />
+				<input id="cp" type="file"  />
+				<label for='cp'></label>
+				<input id="sub" type="submit" value="运气不错"/>
+				<!--<label for="sub">运气不错</label>-->
+			</form>
+		</div>
+	</body>
+</html>

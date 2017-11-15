@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>凡客诚品登录框</title>
+		<style type="text/css">
+			div {
+				width: 600px;
+				height: auto;
+				margin: 0px auto;
+				position: relative;
+			}
+			.logo{
+				
+			}
+			.logo p{
+				margin: 10px 0px 50px;
+				padding: 0px 10px 0px 10px;
+				font: bold 150% "times new roman","宋体";
+				color: #9A0326;
+				border-bottom: 4px solid dimgray;
+			}
+			#frame{
+				position: relative;
+				height: auto;
+				/*padding-bottom: 300px;*/
+			}
+			input[type="radio"]{
+				position:absolute ;
+				opacity: 0.0;
+			}
+			label{
+				position: relative;
+				display:inline-block;
+				width: 120px;
+				height: 40px;
+				text-align: center;
+				line-height: 40px;
+				font-size: 130% ;
+				font-family: "times new roman","宋体";
+				color: darkgray;
+				border: 2px solid darkgray;
+				cursor: pointer;	
+			}
+			hr{
+				position: absolute;
+				top: 42px;
+				width: 600px;
+				margin: 0px;
+				height: 2px;
+				border:#9A0326 ;
+				background-color: #9A0326;
+				z-index: 2;
+			}
+			section {
+				position:absolute;
+				left: 0px;
+				top: 50px;
+				width: 600px;
+				height: 0px;
+				background:#FAFAFA;
+			}
+			
+			span{
+				color: gray;
+				font-size: 110%;
+				font-family: "宋体";
+			}
+			.inputarea1,.inputarea2,.loginbtm1,.loginbtm2{
+				width: 400px;
+				margin:30px auto;
+				visibility: hidden;
+			}
+			.inputarea1,.inputarea2{
+				vertical-align: middle;
+			}
+			 input[type='text']:focus{
+				border-color: dodgerblue;
+			}
+			.inputarea1 input,.inputarea2 input{
+				width: 250px;
+				height: 30px;	
+				border: 1px solid lightslategray;
+			}
+			.inputarea1 input::-moz-placeholder,
+			.inputarea2 input::-moz-placeholder
+			{
+				font-size: 110%;
+				font-family: "宋体";
+				font-style:oblique ;	
+			}
+			.inputarea1 input::-webkit-input-placeholder,
+			.inputarea2 input::-webkit-input-placeholder
+			{
+				font-size: 110%;
+				font-family: "宋体";
+				font-style:oblique ;
+			}
+			input[type="submit"]{
+				width: 80px;
+				height: 30px;
+				border:none;
+				border-radius: 5px;
+				padding: 0px;
+				background-color: #9A0326;
+				color: white;
+				font-family: "宋体";
+				font-size: 110%;
+				cursor:pointer;
+			}
+			.loginbtm1 span,.loginbtm2 span{padding-left:80px ;}
+			.loginbtm1 span a,.loginbtm2 span a{color: gray; text-decoration: none;}
+			.loginbtm1 span a:hover ,.loginbtm2 span a:hover{color: darkblue;}
+			
+			/*以下设置登录框切换css样式*/
+			#vjia:checked ~ label[for='vjia']{background-color: #9A0326;color: white;border: 2px solid #9A0326; }
+			#vjia:checked ~ .content1 {height: 220px;}
+			#vjia:checked ~ .content1 *{visibility: visible;}
+			
+			#vancl:checked ~ label[for='vancl']{background-color: #9A0326;color: white;border: 2px solid #9A0326;}
+			#vancl:checked ~ .content2 {height: 220px;}
+			#vancl:checked ~ .content2 *{visibility: visible;}
+			
+			
+		</style>
+	</head>
+	<body>
+		<div class="logo">
+			<p>登录VJIA.COM</p>
+		</div>
+		<div id="frame">
+			
+			<!--Vjia用户登录框-->
+			<input id="vjia" type="radio" name="way" checked="checked" />
+			<label for="vjia">Vjia用户</label>
+			<section class="content1">
+				<div class="inputarea1">
+					<span >
+						用户名：
+					</span>
+					<input type="text" name="" value="" placeholder="请输入邮箱/手机号" />
+				</div>
+				<div class="inputarea1">
+					<span >
+						密&emsp;码：
+					</span>
+					<input type="text" name="" value="" placeholder="请输入密码" />
+				</div>
+				<div class="loginbtm1">
+					<input type="submit" name="" value="登录" />
+					<span><a href="">忘记密码？</a></span>
+				</div>
+			</section>
+			<hr />
+			<!--vancl用户登录框-->
+			<input id="vancl" type="radio" name="way"/>
+			<label for="vancl">Vancl用户</label>
+			<section class="content2">
+				<div class="inputarea2">
+					<span >
+						账&emsp;号：
+					</span>
+					<input type="text" name="" value="" placeholder="请输入Vancl通行证" />
+				</div>
+				<div class="inputarea2">
+					<span >
+						密&emsp;码：
+					</span>
+					<input type="text" name="" value="" placeholder="请输入账户密码" />
+				</div>
+				<div class="loginbtm2">
+					<input type="submit" name="" value="登录" />
+					<span><a href="">忘记密码？</a></span>
+				</div>
+			</section>
+			
+		</div>
+	</body>
+</html>

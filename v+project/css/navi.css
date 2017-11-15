@@ -60,7 +60,7 @@
 			li.navitop-tx-right-bar-car:hover span a{
 				color: #FD245B;
 			}
-			/*以下设置下拉框悬停显示*/
+			/*为实现下拉动画效果而添加的css样式*/
 			li.navitop-tx-right-bar-car:hover .navitop-tx-right-myv{
 				/*display: block;*/ 
 				opacity: 1;
@@ -68,7 +68,6 @@
 				visibility: visible;
 				/*background-color: #F0F6F6;*/
 			}
-			/*为实现动画效果而添加的css样式*/
 			/*li.navitop-tx-right-bar-car:hover .navitop-tx-right-myv ul{
 				opacity: 1;
 				height: 120px;
@@ -80,12 +79,17 @@
 				visibility: visible;
 			}
 			
-			li.navitop-tx-right-bar-car:hover .navitop-tx-right-webnavi{
-				display: block; 
+			li.navitop-tx-right-bar-car:hover .navitop-tx-right-webnavi
+			{
+				/*display: block;*/ 
+				opacity: 1;
+				height: 200px;
+				visibility: visible;
 			}
-			
+			/*动画效果 结束*/
 			/*以下设置:after属性(下拉菜单后面的箭头图示) 以及过渡效果*/
-			.navitop-tx-right-bar li:nth-child(4) span a::after{
+			.navitop-tx-right-bar li:nth-child(4) span a::after,
+			.navitop-tx-right-bar li:nth-child(5) span a::after{
 				content: '<';
 				font-weight: bolder;
 				position: absolute;
@@ -93,7 +97,8 @@
 				transform: rotate(90deg);
 				
 			}
-			.navitop-tx-right-bar li:nth-child(4):hover span a::after{
+			.navitop-tx-right-bar li:nth-child(4):hover span a::after,
+			.navitop-tx-right-bar li:nth-child(5):hover span a::after{
 				transform: rotate(270deg);
 				transition:  1s transform ;
 			}
@@ -138,9 +143,13 @@
 			/*下拉菜单·网站导航·开始*/
 			div.navitop-tx-right-webnavi{
 				position:absolute;
-				display:none;
+				/*display:none;*/
 				width:190px;
 				background-color: #F0F6F6;
+				opacity: 0;
+				height: 0px;
+				visibility: hidden;
+				transition: all 1s;
 			}
 			div.navitop-tx-right-webnavi div ul{
 				list-style: none;
