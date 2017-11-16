@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>利用结构性伪类实现登录框切换效果</title>
+		<style type="text/css">
+			body{
+				width: 600px;
+				margin: 0px auto;
+				font-family: times new roman,"宋体";
+				color: gray;			
+			}			
+			#frame{position: relative;border:1px solid transparent}
+			a,span{
+				display: inline-block;			
+			}
+			h3{
+				color:darkred;	
+				line-height: 40px;
+				padding-left: 10px;
+				border-bottom: 4px solid darkred;		
+			}
+			.indexwrap{height:42px;border-bottom:2px solid darkred;}
+			a[href^="#"]{
+				color: gray;				
+				text-decoration: none;	
+				height: 40px;
+				width: 100px;
+				line-height: 40px;
+				text-align: center;		
+				border:2px solid lightgray;
+				border-bottom:2px solid darkred;
+				/*z-index: -1;*/
+			}
+			a[href^="#"]:hover{
+				color:white;
+				background-color: darkred;	
+				border-color: darkred;
+			}
+/*			a[href^="#"]:visited{
+				color:darkred;
+				background-color: darkred;	
+				border-color: darkred;
+						
+			}*/
+/*	单击之后背景颜色改变事件还未实现	*/
+			#vjia,#vancl{position: absolute;top: 80px;left:100px;/*margin: 0px auto;*/width: 400px;}
+/*		position属性和margin属性冲突，此时不能把div调至页面中间	*/
+			span{
+				height: 40px;
+				width: 100px;
+				line-height: 40px;
+				margin:10px 0px;
+				text-align: center;
+							
+			}
+			input[type="text"]{height: 40px;width:280px; margin:10px 0px;outline:none;border:1px solid gray;}
+			input[type="text"]:focus{border-color: blue;}
+			input[type="submit"]{height: 40px;width: 120px;margin: 10px 0px 0px 50px;;border:none;
+			background:darkred;color:white; border-radius:5px; padding:0px;cursor: pointer; }
+			
+			a[href=""]{height: 40px;margin:10px 0px;padding-left: 100px;text-decoration: none;color: gray;outline: none;}
+			a[href=""]:hover{color: blue;text-decoration: underline;}
+			#vancl{display:none; background-color:white;}
+/*			#vjia{background-color:skyblue;}*/
+			/*#vancl{background-color: pink; }*/
+			#vancl:target{display: block;z-index: 2}
+			#vjia:target  {display: block;}
+		</style>
+<!--	这里有明显的尚不能实现的bug：
+			1.链接框选中之后，无法实现checked和unchecked背景高亮的功能；
+			2.上述代码如不加优化，初次打开，vjia和vancl登录框两个都会默认显示；
+			2017.11.16.9:47	
+			3.解决方案：设置#vancl display为none，背景色，以便于覆盖#vjia内容；
+			4.:target事件设置z-index属性，让其显示在上层，并以背景色覆盖#vjia内容；
+			5.:target伪类属于单击触发事件，不能触发兄弟元素属性，只能对链接target生效；
+			6.-->
+			
+	</head>
+	<body>
+		<div class="logo">
+			<h3>登录VJIA.COM</h3>
+		</div>
+		<div id="frame">
+			<div class="indexwrap">
+				<a href="#vjia">Vjia用户</a>
+				<a href="#vancl">Vancl用户</a>
+			</div>
+			<div id="vjia">
+				<span>用户名：</span>
+				<input type="text" name="input username"/>
+				<span>密&emsp;码：</span>
+				<input type="text" name="input passwd"/>
+				<input type="submit" value="登录VJIA"/>
+				<a href="">忘记密码?</a>			
+			</div>
+<!--	以下是vanle登录框		-->
+			<div id="vancl">
+				<span>账&emsp;户：</span>
+				<input type="text" name="input username"/>
+				<span>密&emsp;码：</span>
+				<input type="text" name="input passwd"/>
+				<input type="submit" value="登录VANCL"/>
+				<a href="">忘记密码?</a>			
+			</div>
+			
+		</div>
+	</body>
+</html>
