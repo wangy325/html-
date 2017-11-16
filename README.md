@@ -504,7 +504,7 @@ list-style-position:inside/outside;
 
 <h3 id="5.5">5.5 伪类(Pseudo-classes)</h3>
 
-[PSEUDO-CLASSES](https://www.w3.org/TR/CSS22/selector.html#pseudo-elements) is used to add special effect to some selecters.
+[PSEUDO-CLASSES](https://www.w3.org/TR/CSS22/selector.html#pseudo-elements) are used to add special effect to some selecters.
 
 >Syntax:selecter(Elemment):pseudo-class{property:value;}
 
@@ -567,7 +567,7 @@ list-style-position:inside/outside;
 
 * [:last-child](https://css-tricks.com/almanac/selectors/l/last-child/) 
 	
->Allows you to target the last element directly inside its containling element.指定父元素的最后一个子元素的格式，如果指定的子元素错误（不存在），则属于无效设置
+>`:last-child` Allows you to target the last element directly inside its containling element.指定父元素的最后一个子元素的格式，如果指定的子元素错误（不存在），则属于无效设置
 		
 ```html			
 p:last-child{fontsize:0.75em;} /*指定最后一个p段落子元素的字号为0.75em*/
@@ -624,7 +624,7 @@ p:last-child{fontsize:0.75em;} /*指定最后一个p段落子元素的字号为0
 >
 元素在文档流中的特点：
 
-*   *块元素*
+*   **块元素**
 
 	1.默认宽度是父元素的全部
 	
@@ -632,7 +632,7 @@ p:last-child{fontsize:0.75em;} /*指定最后一个p段落子元素的字号为0
 			
 	3.在页面中自上而下垂直排列
 	
-*  *内联元素*
+*  **内联元素**
 
 	1.默认高度和宽度都被内容撑开
 	
@@ -644,60 +644,60 @@ p:last-child{fontsize:0.75em;} /*指定最后一个p段落子元素的字号为0
 
 > 使用float来设置元素的浮动
 
-	* 可选值：
+* 可选值：
 	
-		none 默认值，元素不浮动，就在文档流中
+	none 默认值，元素不浮动，就在文档流中
 		
-		left 元素向页面的左侧浮动
+	left 元素向页面的左侧浮动
 		
-		right 元素向页面的右侧浮动
+	right 元素向页面的右侧浮动
 		
-	* 浮动特点：
+* 浮动特点：
 	
-		1.元素设置浮动以后，会完全脱离文档流，并向页面的左上或右上浮动m，直到遇到父元素的边框或其他的父元素时则停止浮动
+	1.元素设置浮动以后，会完全脱离文档流，并向页面的左上或右上浮动m，直到遇到父元素的边框或其他的父元素时则停止浮动
 		
-		2.如果浮动元素上边是一个没有浮动的块元素，元素不会超过该块元素
+	2.如果浮动元素上边是一个没有浮动的块元素，元素不会超过该块元素
 		
-		3.浮动元素的浮动位置不能超过他上边浮动的兄弟元素，最多一边齐
+	3.浮动元素的浮动位置不能超过他上边浮动的兄弟元素，最多一边齐
 		
-		4.浮动元素不会覆盖文字，文字会围绕在浮动元素的周围，所以可以通过浮动来实现文字环绕图片的效果
+	4.浮动元素不会覆盖文字，文字会围绕在浮动元素的周围，所以可以通过浮动来实现文字环绕图片的效果
 		
-	* 浮动以后元素会完全脱离文档流，脱离文档流以后元素会具有如下特点：
+* 浮动以后元素会完全脱离文档流，脱离文档流以后元素会具有如下特点：
 	
-		1.块元素不独占一行
+	1.块元素不独占一行
 		
-		2.块元素的宽度和高度都被内容撑开
+	2.块元素的宽度和高度都被内容撑开
 		
-		3.元素不在文档流占用位置
+	3.元素不在文档流占用位置
 		
-		4.内联元素会变成块元素
+	4.内联元素会变成块元素
 		
-	* 高度塌陷
-		-在文档流中元素的高度默认被子元素撑开，当子元素浮动时，子元素会脱离文档流，此时将不能撑起父元素的高度，会导致父元素的高度塌陷。父元素高度塌陷会导致其他元素的位置上移，导致页面的布局混乱
+* 高度塌陷
+	-在文档流中元素的高度默认被子元素撑开，当子元素浮动时，子元素会脱离文档流，此时将不能撑起父元素的高度，会导致父元素的高度塌陷。父元素高度塌陷会导致其他元素的位置上移，导致页面的布局混乱
 		
-		- 可以通过开启元素的BFC(Block Formatting Context)来处理高度塌陷的问题
+	- 可以通过开启元素的BFC(Block Formatting Context)来处理高度塌陷的问题
 			
-			* 它是一个隐含属性，默认情况是关闭，当开启以后元素会具有如下的特性：
+		* 它是一个隐含属性，默认情况是关闭，当开启以后元素会具有如下的特性：
 			
-				1.父元素的垂直外边距不会和子元素重叠
+			1.父元素的垂直外边距不会和子元素重叠
 				
-				2.开启BFC的元素不会被浮动元素覆盖
+			2.开启BFC的元素不会被浮动元素覆盖
 				
-				3.父元素可以包含浮动的子元素 ******
+			3.父元素可以包含浮动的子元素 ******
 			
-			* 开启BFC的方式很多：
+		* 开启BFC的方式很多：
 			
-				1.设置元素浮动
+			1.设置元素浮动
 				
-				2.设置元素绝对定位
+			2.设置元素绝对定位
 				
-				3.设置元素为`inline-block`
+			3.设置元素为`inline-block`
 				
-				4.将元素的`overflow`设置为一个非默认值
+			4.将元素的`overflow`设置为一个非默认值
 				
-			* 一般我们采取副作用比较小的方式
+		* 一般我们采取副作用比较小的方式
 			```
-				overflow:hidden;
+			overflow:hidden;
             ```
 <h3 id="6.3">6.3 定位(position)</h3>
 
@@ -791,4 +791,3 @@ p:last-child{fontsize:0.75em;} /*指定最后一个p段落子元素的字号为0
 		- 0 表示完全透明
 				
 		- 100 表示完全不透明
-		
